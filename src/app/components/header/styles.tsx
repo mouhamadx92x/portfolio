@@ -16,6 +16,9 @@ export const headerLinkTypographyStyles = {
     "&:hover": {
         color: "#c6a47e",
     },
+    fontFamily: "'Libre Baskerville', serif;",
+    fontSize: "16px",
+    fontWeight: 400,
 };
 
 export const headerLinkStyles = {
