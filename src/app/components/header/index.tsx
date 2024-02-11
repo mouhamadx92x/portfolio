@@ -11,46 +11,62 @@ import {
     headerLinkStyles,
     headerMainBoxStyles,
 } from "./styles";
+import {
+    CV_PATH,
+    HOME_PATH,
+    PROJECTS_PATH,
+    CONTACT_PATH,
+} from "../../../../public/paths";
+import {
+    NAVIGATION_HOME_LABEL,
+    NAVIGATION_CONTACT_ME_LABEL,
+    NAVIGATION_CV_LABEL,
+    NAVIGATION_PROJECTS_LABEL,
+} from "../../../../public/text";
 
 const Header = () => {
     return (
         <Box sx={headerMainBoxStyles}>
             <AppBar position="sticky" sx={headerAppBarStyles}>
                 <Toolbar sx={headerToolbarStyles}>
-                    <Link href="/home" passHref style={headerLinkStyles}>
+                    <Link href={HOME_PATH} passHref style={headerLinkStyles}>
                         <Typography
                             variant="body1"
                             component="a"
                             sx={headerLinkTypographyStyles}
                         >
-                            Home
+                            {NAVIGATION_HOME_LABEL}
                         </Typography>
                     </Link>
-                    <Link href="/projects" passHref style={headerLinkStyles}>
+                    <Link
+                        href={PROJECTS_PATH}
+                        passHref
+                        style={headerLinkStyles}
+                    >
                         <Typography
                             variant="body1"
                             component="a"
                             sx={headerLinkTypographyStyles}
                         >
-                            Projects
+                            {NAVIGATION_PROJECTS_LABEL}
                         </Typography>
                     </Link>
-                    <Link href="/cv" passHref style={headerLinkStyles}>
+                    <Link href={CV_PATH} passHref style={headerLinkStyles}>
                         <Typography
                             variant="body1"
                             component="a"
                             sx={headerLinkTypographyStyles}
                         >
-                            CV
+                            {NAVIGATION_CV_LABEL}
                         </Typography>
                     </Link>
-                    <Link href="/contact" passHref style={headerLinkStyles}>
+                    <Link href={CONTACT_PATH} passHref style={headerLinkStyles}>
                         <Typography
                             variant="body1"
                             component="a"
                             sx={headerLinkTypographyStyles}
                         >
-                            Contact Me
+                            {NAVIGATION_CONTACT_ME_LABEL}
                         </Typography>
                     </Link>
                 </Toolbar>
