@@ -3,27 +3,37 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import {
     footerMainBoxStyles,
-    FooterContactInfoBoxStyles,
+    footerContactInfoBoxStyles,
     footerContactDetailsBoxStyles,
     footerAddressDetailsBoxStyle,
     footerPersonalContactDetailsBoxStyle,
     footerSocialMediaBoxStyle,
     footerSocialMediaStyle,
 } from "./styles";
+import {
+    FOOTER_CONTACT_SECTION_LABEL,
+    FOOTER_CONTACT_MOBIL_NUMBER,
+    FOOTER_CONTACT_EMAIL,
+    FOOTER_CONTACT_ADDRESS_STREET,
+    FOOTER_CONTACT_ADDRESS_POST_CODE,
+    FOOTER_CONTACT_COPY_RIGHT,
+} from "../../../../public/text";
 
 const Footer = () => {
     return (
         <Box sx={footerMainBoxStyles}>
-            <Box sx={FooterContactInfoBoxStyles}>
-                <Typography>TO CONTACT:</Typography>
+            <Box sx={footerContactInfoBoxStyles}>
+                <Typography>{FOOTER_CONTACT_SECTION_LABEL}</Typography>
                 <Box sx={footerContactDetailsBoxStyles}>
                     <Box sx={footerPersonalContactDetailsBoxStyle}>
-                        <Typography>Tel: +49 (0) 176 248 22011</Typography>
-                        <Typography>E-Mail: mouhamadx92x@gmail.com</Typography>
+                        <Typography>{FOOTER_CONTACT_MOBIL_NUMBER}</Typography>
+                        <Typography>{FOOTER_CONTACT_EMAIL}</Typography>
                     </Box>
                     <Box sx={footerAddressDetailsBoxStyle}>
-                        <Typography>Am Vierrutenberg 4A</Typography>
-                        <Typography> 13055 Berlin</Typography>
+                        <Typography>{FOOTER_CONTACT_ADDRESS_STREET}</Typography>
+                        <Typography>
+                            {FOOTER_CONTACT_ADDRESS_POST_CODE}
+                        </Typography>
                     </Box>
                 </Box>
                 <Box sx={footerSocialMediaBoxStyle}>
@@ -40,9 +50,7 @@ const Footer = () => {
                         />
                     </Link>
                 </Box>
-                <Typography>
-                    © 2024 Mohammad Alsbinati. All rights reserved.
-                </Typography>
+                <Typography>{FOOTER_CONTACT_COPY_RIGHT}</Typography>
             </Box>
             <Box>
                 <Typography>2</Typography>

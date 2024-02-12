@@ -7,7 +7,7 @@ export const footerMainBoxStyles = {
     padding: "30px",
 };
 
-export const FooterContactInfoBoxStyles = {
+export const footerContactInfoBoxStyles = {
     display: "flex",
     flexDirection: "column",
     alignItems: "flex-start",
