@@ -1,15 +1,13 @@
-import { Box, Typography } from "@mui/material";
-
+import { Box } from "@mui/material";
 import { footerMainBoxStyles } from "./styles";
 import FooterContactDetails from "./footer-contact-details";
+import ContactForm from "./contact-form";
 
 const Footer = () => {
     return (
         <Box sx={footerMainBoxStyles}>
             <FooterContactDetails />
-            <Box>
-                <Typography>2</Typography>
-            </Box>
+            <ContactForm />
         </Box>
     );
 };
