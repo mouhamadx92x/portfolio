@@ -1,6 +1,7 @@
 "use client";
 import { useRef, FormEvent } from "react";
 import emailjs from "@emailjs/browser";
+import { Box, Button, TextField, Typography } from "@mui/material";
 
 const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string;
 const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string;
@@ -27,15 +28,37 @@ const ContactForm = () => {
     };
 
     return (
-        <form ref={form} onSubmit={sendEmail}>
-            <label htmlFor="user_name">Name</label>
-            <input id="senderName" type="text" name="senderName" required />
-            <label htmlFor="user_email">Email</label>
-            <input id="senderEmail" type="email" name="senderEmail" required />
-            <label htmlFor="message">Message</label>
-            <textarea id="messageContent" name="messageContent" required />
-            <input type="submit" value="Send" />
-        </form>
+        <Box component="form" ref={form} onSubmit={sendEmail}>
+            <Box>
+                <TextField
+                    id="senderName"
+                    label="Name"
+                    name="senderName"
+                    required
+                />
+
+                <TextField
+                    id="senderEmail"
+                    label="Email"
+                    name="senderEmail"
+                    type="email"
+                    required
+                />
+            </Box>
+
+            <TextField
+                id="messageContent"
+                label="Message"
+                name="messageContent"
+                multiline
+                rows={4}
+                required
+            />
+
+            <Button variant="contained" color="primary" type="submit">
+                Send
+            </Button>
+        </Box>
     );
 };
 
