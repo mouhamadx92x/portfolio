@@ -1,6 +1,5 @@
 "use client";
 import { useRef, FormEvent } from "react";
-import emailjs from "@emailjs/browser";
 import { Box, Button, TextField, Typography } from "@mui/material";
 import { sendEmail } from "@/utils/utils";
 
