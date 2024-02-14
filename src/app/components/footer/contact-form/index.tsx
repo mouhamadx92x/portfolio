@@ -1,11 +1,10 @@
+"use client";
 import { useRef, FormEvent } from "react";
 import emailjs from "@emailjs/browser";
 
-interface IFormInputs {
-    user_name: string;
-    user_email: string;
-    message: string;
-}
+const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string;
+const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string;
+const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string;
 
 const ContactForm = () => {
     const form = useRef<HTMLFormElement>(null);
@@ -15,12 +14,7 @@ const ContactForm = () => {
 
         if (form.current) {
             emailjs
-                .sendForm(
-                    "YOUR_SERVICE_ID",
-                    "YOUR_TEMPLATE_ID",
-                    form.current,
-                    "YOUR_PUBLIC_KEY"
-                )
+                .sendForm(serviceId, templateId, form.current, publicKey)
                 .then(
                     (result) => {
                         console.log(result.text);
@@ -35,11 +29,11 @@ const ContactForm = () => {
     return (
         <form ref={form} onSubmit={sendEmail}>
             <label htmlFor="user_name">Name</label>
-            <input id="user_name" type="text" name="user_name" required />
+            <input id="senderName" type="text" name="senderName" required />
             <label htmlFor="user_email">Email</label>
-            <input id="user_email" type="email" name="user_email" required />
+            <input id="senderEmail" type="email" name="senderEmail" required />
             <label htmlFor="message">Message</label>
-            <textarea id="message" name="message" required />
+            <textarea id="messageContent" name="messageContent" required />
             <input type="submit" value="Send" />
         </form>
     );
