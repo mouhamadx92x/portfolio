@@ -2,33 +2,31 @@
 import { useRef, FormEvent } from "react";
 import emailjs from "@emailjs/browser";
 import { Box, Button, TextField, Typography } from "@mui/material";
+import { sendEmail } from "@/utils/utils";
 
 const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string;
 const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string;
 const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string;
 
 const ContactForm = () => {
-    const form = useRef<HTMLFormElement>(null);
+    const ContactUsFormRef = useRef<HTMLFormElement>(null);
 
-    const sendEmail = (e: FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
+    const sendEmailHandler = (event: FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
 
-        if (form.current) {
-            emailjs
-                .sendForm(serviceId, templateId, form.current, publicKey)
-                .then(
-                    (result) => {
-                        console.log(result.text);
-                    },
-                    (error) => {
-                        console.log(error.text);
-                    }
-                );
+        const contactUsFormElement = ContactUsFormRef.current;
+
+        if (contactUsFormElement) {
+            sendEmail(contactUsFormElement);
         }
     };
 
     return (
-        <Box component="form" ref={form} onSubmit={sendEmail}>
+        <Box
+            component="form"
+            ref={ContactUsFormRef}
+            onSubmit={sendEmailHandler}
+        >
             <Box>
                 <TextField
                     id="senderName"
