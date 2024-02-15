@@ -2,10 +2,7 @@
 import { useRef, FormEvent } from "react";
 import { Box, Button, TextField, Typography } from "@mui/material";
 import { sendEmail } from "@/utils/utils";
-
-const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string;
-const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string;
-const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string;
+import { FOOTER_CONTACT_US_FORM_BUTTON_LABEL } from "../../../../../public/text";
 
 const ContactForm = () => {
     const ContactUsFormRef = useRef<HTMLFormElement>(null);
@@ -53,7 +50,7 @@ const ContactForm = () => {
             />
 
             <Button variant="contained" color="primary" type="submit">
-                Send
+                {FOOTER_CONTACT_US_FORM_BUTTON_LABEL}
             </Button>
         </Box>
     );

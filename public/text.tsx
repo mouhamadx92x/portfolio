@@ -16,4 +16,14 @@ export const FOOTER_CONTACT_ADDRESS_STREET = "Am Vierrutenberg 4A";
 
 export const FOOTER_CONTACT_ADDRESS_POST_CODE = "13055 Berlin";
 
-export const FOOTER_CONTACT_COPY_RIGHT = "© 2024 Mohammad Alsbinati. All rights reserved.";
+export const FOOTER_CONTACT_COPY_RIGHT =
+    "© 2024 Mohammad Alsbinati. All rights reserved.";
+
+export const FOOTER_CONTACT_US_FORM_BUTTON_LABEL = "Send";
+
+export const CONTACT_US_FORM_INVALID_MESSAGE =
+    "Invalid message. Please check and try again.";
+
+export const CONTACT_US_FORM_MESSAGE_SENT_SUCCESSFULLY = "Message sent";
+
+export const CONTACT_US_FORM_MESSAGE_ERROR_OCCURRED = "An error occurred";
