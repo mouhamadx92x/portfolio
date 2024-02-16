@@ -5,14 +5,22 @@ import {
     footerContactUsFormLabelStyles,
     footerContactUsFormNameAndEmailBoxStyles,
 } from "./styles";
+import {
+    FOOTER_CONTACT_FORM_TEXT_FIELD_NAME_LABEL,
+    FOOTER_CONTACT_FORM_TEXT_FIELD_EMAIL_LABEL,
+} from "../../../../../../public/text";
 
 const ContactFormNameAndEmail = () => {
     return (
         <Box sx={footerContactUsFormNameAndEmailBoxStyles}>
-            <Typography sx={footerContactUsFormLabelStyles}>Name:</Typography>
+            <Typography sx={footerContactUsFormLabelStyles}>
+                {FOOTER_CONTACT_FORM_TEXT_FIELD_NAME_LABEL}
+            </Typography>
 
             <StyledTextField id="senderName" name="senderName" required />
-            <Typography sx={footerContactUsFormLabelStyles}>E-mail:</Typography>
+            <Typography sx={footerContactUsFormLabelStyles}>
+                {FOOTER_CONTACT_FORM_TEXT_FIELD_EMAIL_LABEL}
+            </Typography>
             <StyledTextField
                 id="senderEmail"
                 name="senderEmail"

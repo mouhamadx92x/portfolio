@@ -6,13 +6,16 @@ import {
     footerContactUsFormMessageAndButtonBoxStyles,
     footerContactUsFormMessageTextFieldStyles,
 } from "./styles";
-import { FOOTER_CONTACT_US_FORM_BUTTON_LABEL } from "../../../../../../public/text";
+import {
+    FOOTER_CONTACT_FORM_TEXT_FIELD_MESSAGE_LABEL,
+    FOOTER_CONTACT_US_FORM_BUTTON_LABEL,
+} from "../../../../../../public/text";
 
 const ContactFormMessageAndButton = () => {
     return (
         <Box sx={footerContactUsFormMessageAndButtonBoxStyles}>
             <Typography sx={footerContactUsFormLabelStyles}>
-                Message:
+                {FOOTER_CONTACT_FORM_TEXT_FIELD_MESSAGE_LABEL}
             </Typography>
 
             <StyledTextField

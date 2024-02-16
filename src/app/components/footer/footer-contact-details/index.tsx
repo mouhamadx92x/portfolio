@@ -10,7 +10,7 @@ import {
     footerSocialMediaStyle,
 } from "./styles";
 import {
-    FOOTER_CONTACT_SECTION_LABEL,
+    FOOTER_CONTACT_ADDRESS_SECTION_LABEL,
     FOOTER_CONTACT_MOBIL_NUMBER,
     FOOTER_CONTACT_EMAIL,
     FOOTER_CONTACT_ADDRESS_STREET,
@@ -21,7 +21,7 @@ import {
 const FooterContactDetails = () => {
     return (
         <Box sx={footerContactInfoBoxStyles}>
-            <Typography>{FOOTER_CONTACT_SECTION_LABEL}</Typography>
+            <Typography>{FOOTER_CONTACT_ADDRESS_SECTION_LABEL}</Typography>
             <Box sx={footerContactDetailsBoxStyles}>
                 <Box sx={footerPersonalContactDetailsBoxStyle}>
                     <Typography>{FOOTER_CONTACT_MOBIL_NUMBER}</Typography>

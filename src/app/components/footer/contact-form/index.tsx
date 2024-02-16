@@ -9,6 +9,7 @@ import {
 } from "./styles";
 import ContactFormMessageAndButton from "./contact-form-message-and-button";
 import ContactFormNameAndEmail from "./contact-form-name-and-email";
+import { FOOTER_CONTACT_FORM_SECTION_LABEL } from "../../../../../public/text";
 
 const ContactForm = () => {
     const ContactUsFormRef = useRef<HTMLFormElement>(null);
@@ -28,7 +29,7 @@ const ContactForm = () => {
             <Typography
                 sx={{ ...footerContactUsFormLabelStyles, marginTop: "10px" }}
             >
-                Contact Me:
+                {FOOTER_CONTACT_FORM_SECTION_LABEL}
             </Typography>
             <Box
                 component="form"
