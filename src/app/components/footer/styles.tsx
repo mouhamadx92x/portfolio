@@ -6,3 +6,7 @@ export const footerMainBoxStyles = {
     justifyContent: "space-between",
     padding: "30px",
 };
+
+export const footerContactUsFormLabelStyles = {
+    marginBottom: "6px",
+};
