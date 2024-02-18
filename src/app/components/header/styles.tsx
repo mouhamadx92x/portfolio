@@ -4,6 +4,8 @@ export const headerAppBarStyles = {
     backgroundColor: "transparent",
     border: "0",
     boxShadow: "none",
+    top: "0",
+    right: "25%",
 };
 
 export const headerToolbarStyles = {

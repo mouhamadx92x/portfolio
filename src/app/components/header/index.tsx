@@ -24,7 +24,7 @@ import HeaderNavigationLink from "./header-navigation-link";
 const Header = () => {
     return (
         <Box sx={headerMainBoxStyles}>
-            <AppBar position="sticky" sx={headerAppBarStyles}>
+            <AppBar position="fixed" sx={headerAppBarStyles}>
                 <Toolbar sx={headerToolbarStyles}>
                     <HeaderNavigationLink
                         PATH={HOME_PATH}
