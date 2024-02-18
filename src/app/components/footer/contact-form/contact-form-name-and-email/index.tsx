@@ -1,5 +1,4 @@
 import { Box, Typography } from "@mui/material";
-import React from "react";
 import StyledTextField from "../styled-text-field";
 import {
     footerContactUsFormLabelStyles,
