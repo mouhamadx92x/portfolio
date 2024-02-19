@@ -29,7 +29,6 @@ const HomePage = () => {
                 <Header />
             </Box>
             <Box sx={homePageProjectsCardBoxStyles}>
-                <Typography>ola</Typography>
                 <ProductCard />
             </Box>
             <Footer />

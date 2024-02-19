@@ -1,22 +1,32 @@
 import { Box, Typography } from "@mui/material";
+import {
+    projectsCardImgBoxStyles,
+    projectsCardBoxStyles,
+    projectsCardTypographyNameStyles,
+    projectsCardTypographyStyles,
+    projectsCardTypographyBoxStyles,
+} from "./styles";
 
 const ProductCard = () => {
     const img = "/images/background.jpg";
 
     return (
-        <Box>
+        <Box sx={projectsCardBoxStyles}>
             <Box
                 sx={{
-                    width: "360px",
-                    height: "480px",
+                    ...projectsCardImgBoxStyles,
                     background: `url(${img})`,
                 }}
             ></Box>
-            <Box>
-                <Typography>22/3</Typography>
-                <Typography variant="h1">Name</Typography>
-                <Typography>Desc</Typography>
-                <Typography>Name</Typography>
+            <Box sx={projectsCardTypographyBoxStyles}>
+                <Typography sx={projectsCardTypographyStyles}>22/3</Typography>
+                <Typography variant="h1" sx={projectsCardTypographyNameStyles}>
+                    Name
+                </Typography>
+                <Typography sx={projectsCardTypographyStyles}>Desc</Typography>
+                <Typography sx={projectsCardTypographyStyles}>
+                    see the project
+                </Typography>
             </Box>
         </Box>
     );

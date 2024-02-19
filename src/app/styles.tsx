@@ -10,5 +10,7 @@ export const homePageProjectsCardBoxStyles = {
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
-    alignItems: "start",
+    alignItems: "center",
+    paddingTop: "50px",
+    paddingBottom: "50px",
 };
