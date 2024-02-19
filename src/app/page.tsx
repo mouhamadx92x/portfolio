@@ -29,7 +29,33 @@ const HomePage = () => {
                 <Header />
             </Box>
             <Box sx={homePageProjectsCardBoxStyles}>
-                <ProductCard />
+                <ProductCard
+                    imgLink={"/images/To-do.png"}
+                    name={"TO DO"}
+                    date={"8/23"}
+                    webSiteLink={"https://todo-app-mou.netlify.app/"}
+                    description={
+                        "TO DO app is where you can manege your daily tasks"
+                    }
+                />
+                <ProductCard
+                    imgLink={"/images/Weather.png"}
+                    name={"Weather"}
+                    date={"9/23"}
+                    webSiteLink={"https://weather-app-mou.netlify.app/"}
+                    description={
+                        "Take a look to the weather in any city you want"
+                    }
+                />
+                <ProductCard
+                    imgLink={"/images/Videos-studio.png"}
+                    name={"Videos Studio"}
+                    date={"1/24"}
+                    webSiteLink={"https://videos-gallery.netlify.app/"}
+                    description={
+                        "Videos Studio is an Interior Designer's Projects Gallery"
+                    }
+                />
             </Box>
             <Footer />
             <ToastContainer position="bottom-center" limit={1} />

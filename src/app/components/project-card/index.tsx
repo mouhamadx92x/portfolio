@@ -6,26 +6,47 @@ import {
     projectsCardTypographyStyles,
     projectsCardTypographyBoxStyles,
 } from "./styles";
+import { PROJECT_CARD_LINK_LABEL } from "../../../../public/constants/text";
 
-const ProductCard = () => {
-    const img = "/images/background.jpg";
+interface productCardProp {
+    imgLink: string;
+    name: string;
+    date: string;
+    description: string;
+    webSiteLink: string;
+}
 
+const ProductCard = ({
+    imgLink,
+    name,
+    date,
+    description,
+    webSiteLink,
+}: productCardProp) => {
     return (
         <Box sx={projectsCardBoxStyles}>
             <Box
                 sx={{
                     ...projectsCardImgBoxStyles,
-                    background: `url(${img})`,
+                    background: `url(${imgLink})`,
                 }}
             ></Box>
             <Box sx={projectsCardTypographyBoxStyles}>
-                <Typography sx={projectsCardTypographyStyles}>22/3</Typography>
-                <Typography variant="h1" sx={projectsCardTypographyNameStyles}>
-                    Name
-                </Typography>
-                <Typography sx={projectsCardTypographyStyles}>Desc</Typography>
                 <Typography sx={projectsCardTypographyStyles}>
-                    see the project
+                    {date}
+                </Typography>
+                <Typography variant="h3" sx={projectsCardTypographyNameStyles}>
+                    {name}
+                </Typography>
+                <Typography sx={projectsCardTypographyStyles}>
+                    {description}
+                </Typography>
+                <Typography
+                    sx={projectsCardTypographyStyles}
+                    component="a"
+                    href={webSiteLink}
+                >
+                    {PROJECT_CARD_LINK_LABEL}
                 </Typography>
             </Box>
         </Box>

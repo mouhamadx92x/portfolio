@@ -1,8 +1,14 @@
-export const projectsCardBoxStyles = { display: "flex" };
+export const projectsCardBoxStyles = {
+    display: "flex",
+    marginBottom: "50px",
+};
 
 export const projectsCardImgBoxStyles = {
     width: "450px",
     height: "350px",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "contain",
 };
 
 export const projectsCardTypographyNameStyles = {
@@ -11,6 +17,10 @@ export const projectsCardTypographyNameStyles = {
 
 export const projectsCardTypographyStyles = {
     color: "#9a9a9a",
+    textDecoration: "none",
+    "&:hover": {
+        color: "#c6a47e",
+    },
 };
 
 export const projectsCardTypographyBoxStyles = {
@@ -19,4 +29,5 @@ export const projectsCardTypographyBoxStyles = {
     alignItems: "start",
     justifyContent: "space-evenly",
     paddingLeft: "75px",
+    width: "400px",
 };
