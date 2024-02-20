@@ -1,18 +1,14 @@
 import { Box, Typography } from "@mui/material";
 import ProjectImg from "../../src/app/components/project-img/index";
+import {
+    projectListMainBoxStyles,
+    projectListTypographyLabelStyles,
+} from "./styles";
 
 function ProjectList() {
     return (
-        <Box
-            sx={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                justifyContent: "center",
-                backgroundColor: "#2b2b2b",
-            }}
-        >
-            <Typography variant="h4" sx={{ color: "#d5d5d5", margin: "20px" }}>
+        <Box sx={projectListMainBoxStyles}>
+            <Typography variant="h4" sx={projectListTypographyLabelStyles}>
                 Projects:
             </Typography>
             <ProjectImg imgLink={"/images/To-do.png"} number={"0 1"} />

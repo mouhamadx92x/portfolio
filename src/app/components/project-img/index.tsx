@@ -1,4 +1,9 @@
 import { Box, CardMedia, Typography } from "@mui/material";
+import {
+    projectImgContainerStyles,
+    projectImgOverlayStyles,
+    projectImgNumberStyles,
+} from "./styles";
 
 interface projectImgProp {
     number: string;
@@ -7,14 +12,7 @@ interface projectImgProp {
 
 const ProjectImg = ({ imgLink, number }: projectImgProp) => {
     return (
-        <Box
-            sx={{
-                position: "relative",
-                width: "1000px",
-                height: "800px",
-                margin: "30px",
-            }}
-        >
+        <Box sx={projectImgContainerStyles}>
             <CardMedia
                 component="img"
                 height="100%"
@@ -22,26 +20,8 @@ const ProjectImg = ({ imgLink, number }: projectImgProp) => {
                 image={imgLink}
                 alt="Card image"
             />
-            <Box
-                sx={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    position: "absolute",
-                    top: "50%",
-                    left: "50%",
-                    width: "1000px",
-                    height: "800px",
-                    transform: "translate(-50%, -50%)",
-                    opacity: 0,
-                    transition: "opacity  0.3s",
-                    backgroundColor: "rgba(43,   43,   43,   0.7)",
-                    "&:hover": {
-                        opacity: 1,
-                    },
-                }}
-            >
-                <Typography variant="h1" sx={{ color: "white" }}>
+            <Box sx={projectImgOverlayStyles}>
+                <Typography variant="h1" sx={projectImgNumberStyles}>
                     {number}
                 </Typography>
             </Box>
