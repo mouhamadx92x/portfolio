@@ -1,13 +1,13 @@
-import { Box, Typography } from "@mui/material";
+import { Box, CardMedia, Typography } from "@mui/material";
 import {
     projectsCardImgBoxStyles,
     projectsCardBoxStyles,
     projectsCardTypographyNameStyles,
     projectsCardTypographyStyles,
+    projectsCardImgStyles,
     projectsCardTypographyBoxStyles,
 } from "./styles";
 import { PROJECT_CARD_LINK_LABEL } from "../../../../public/constants/text";
-
 interface productCardProp {
     imgLink: string;
     name: string;
@@ -25,12 +25,15 @@ const ProductCard = ({
 }: productCardProp) => {
     return (
         <Box sx={projectsCardBoxStyles}>
-            <Box
-                sx={{
-                    ...projectsCardImgBoxStyles,
-                    background: `url(${imgLink})`,
-                }}
-            ></Box>
+            <Box sx={projectsCardImgBoxStyles}>
+                <CardMedia
+                    sx={projectsCardImgStyles}
+                    component="img"
+                    height="300"
+                    image={imgLink}
+                />
+            </Box>
+            ``
             <Box sx={projectsCardTypographyBoxStyles}>
                 <Typography sx={projectsCardTypographyStyles}>
                     {date}
