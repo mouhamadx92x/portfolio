@@ -33,7 +33,6 @@ const ProductCard = ({
                     image={imgLink}
                 />
             </Box>
-            ``
             <Box sx={projectsCardTypographyBoxStyles}>
                 <Typography sx={projectsCardTypographyStyles}>
                     {date}
