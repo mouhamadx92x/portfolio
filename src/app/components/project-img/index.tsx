@@ -10,8 +10,9 @@ const ProjectImg = ({ imgLink, number }: projectImgProp) => {
         <Box
             sx={{
                 position: "relative",
-                width: 350,
-                height: 350,
+                width: "1000px",
+                height: "800px",
+                margin: "30px",
             }}
         >
             <CardMedia
@@ -29,12 +30,12 @@ const ProjectImg = ({ imgLink, number }: projectImgProp) => {
                     position: "absolute",
                     top: "50%",
                     left: "50%",
-                    width: 350,
-                    height: 350,
+                    width: "1000px",
+                    height: "800px",
                     transform: "translate(-50%, -50%)",
                     opacity: 0,
                     transition: "opacity  0.3s",
-                    backgroundColor: "rgba(43,  43,  43,  0.5)",
+                    backgroundColor: "rgba(43,   43,   43,   0.7)",
                     "&:hover": {
                         opacity: 1,
                     },

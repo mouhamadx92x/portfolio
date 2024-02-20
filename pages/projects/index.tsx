@@ -12,7 +12,9 @@ function ProjectList() {
                 backgroundColor: "#2b2b2b",
             }}
         >
-            <Typography>Projects:</Typography>
+            <Typography variant="h4" sx={{ color: "#d5d5d5", margin: "20px" }}>
+                Projects:
+            </Typography>
             <ProjectImg imgLink={"/images/To-do.png"} number={"0 1"} />
             <ProjectImg imgLink={"/images/Videos-studio.png"} number={"0 2"} />
             <ProjectImg imgLink={"/images/Weather.png"} number={"0 3"} />
