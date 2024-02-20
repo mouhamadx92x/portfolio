@@ -1,3 +1,4 @@
+"use client";
 import { Box, Typography } from "@mui/material";
 import ProjectImg from "../../src/app/components/project-img/index";
 import {
