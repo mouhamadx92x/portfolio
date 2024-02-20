@@ -1,11 +1,11 @@
 import { Box, CardMedia, Typography } from "@mui/material";
 
-const ProjectImg = () => {
-    const number = "0 3";
+interface projectImgProp {
+    number: string;
+    imgLink: string;
+}
 
-    const imgLink =
-        "https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp";
-
+const ProjectImg = ({ imgLink, number }: projectImgProp) => {
     return (
         <Box
             sx={{
