@@ -4,7 +4,7 @@ import {
     CONTACT_US_FORM_INVALID_MESSAGE,
     CONTACT_US_FORM_MESSAGE_SENT_SUCCESSFULLY,
     CONTACT_US_FORM_MESSAGE_ERROR_OCCURRED,
-} from "../../public/text";
+} from "../../public/constants/text";
 
 const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string;
 const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string;

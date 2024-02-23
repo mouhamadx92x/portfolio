@@ -1,5 +1,5 @@
 "use client";
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import Header from "./components/header";
 import Footer from "./components/footer";
 import { ToastContainer } from "react-toastify";

@@ -12,13 +12,13 @@ import {
     HOME_PATH,
     PROJECTS_PATH,
     CONTACT_ME_PATH,
-} from "../../../../public/paths";
+} from "../../../../public/constants/paths";
 import {
     NAVIGATION_HOME_LABEL,
     NAVIGATION_CONTACT_ME_LABEL,
     NAVIGATION_CV_LABEL,
     NAVIGATION_PROJECTS_LABEL,
-} from "../../../../public/text";
+} from "../../../../public/constants/text";
 import HeaderNavigationLink from "./header-navigation-link";
 
 const Header = () => {

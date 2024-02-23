@@ -9,7 +9,7 @@ import {
 } from "./styles";
 import ContactFormMessageAndButton from "./contact-form-message-and-button";
 import ContactFormNameAndEmail from "./contact-form-name-and-email";
-import { FOOTER_CONTACT_FORM_SECTION_LABEL } from "../../../../../public/text";
+import { FOOTER_CONTACT_FORM_SECTION_LABEL } from "../../../../../public/constants/text";
 
 const ContactForm = () => {
     const ContactUsFormRef = useRef<HTMLFormElement>(null);

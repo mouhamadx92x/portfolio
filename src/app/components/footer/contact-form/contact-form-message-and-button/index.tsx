@@ -9,7 +9,7 @@ import {
 import {
     FOOTER_CONTACT_FORM_TEXT_FIELD_MESSAGE_LABEL,
     FOOTER_CONTACT_US_FORM_BUTTON_LABEL,
-} from "../../../../../../public/text";
+} from "../../../../../../public/constants/text";
 
 const ContactFormMessageAndButton = () => {
     return (
