@@ -9,17 +9,17 @@ import {
 } from "./styles";
 import { PROJECT_CARD_LINK_LABEL } from "../../../../public/constants/text";
 interface productCardProp {
-    imgLink: string;
+    imgPath: string;
     name: string;
-    date: string;
+    creationDate: string;
     description: string;
     webSiteLink: string;
 }
 
 const ProductCard = ({
-    imgLink,
+    imgPath,
     name,
-    date,
+    creationDate,
     description,
     webSiteLink,
 }: productCardProp) => {
@@ -30,12 +30,12 @@ const ProductCard = ({
                     sx={projectsCardImgStyles}
                     component="img"
                     height="300"
-                    image={imgLink}
+                    image={imgPath}
                 />
             </Box>
             <Box sx={projectsCardTypographyBoxStyles}>
                 <Typography sx={projectsCardTypographyStyles}>
-                    {date}
+                    {creationDate}
                 </Typography>
                 <Typography variant="h3" sx={projectsCardTypographyNameStyles}>
                     {name}
