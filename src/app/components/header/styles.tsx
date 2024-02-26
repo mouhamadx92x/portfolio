@@ -14,17 +14,4 @@ export const headerToolbarStyles = {
     alignItems: "center",
 };
 
-export const headerLinkTypographyStyles = {
-    "&:hover": {
-        color: "#c6a47e",
-    },
-    fontFamily: "'Libre Baskerville', serif;",
-    fontSize: "16px",
-    fontWeight: 400,
-};
-
-export const headerLinkStyles = {
-    textDecoration: "none",
-    color: "#808080",
-};
 export const headerMainBoxStyles = { flexGrow: 1 };
