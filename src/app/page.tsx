@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import { homePageMainBoxStyles, homePageProjectsCardBoxStyles } from "./styles";
 import ProductCard from "./components/project-card";
 import { projectsDetails } from "../../public/assets/assets";
+import "../styles/global.css";
 
 const HomePage = () => {
     const [boxHeight, setBoxHeight] = useState("500px");
