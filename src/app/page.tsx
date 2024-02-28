@@ -7,7 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { useEffect, useState } from "react";
 import { homePageMainBoxStyles, homePageProjectsCardBoxStyles } from "./styles";
 import ProductCard from "./components/project-card";
-import { projectsDetails } from "../../public/assets/assets";
+import { projectsData } from "../../public/assets/assets";
 import "../styles/global.css";
 
 const HomePage = () => {
@@ -31,7 +31,7 @@ const HomePage = () => {
                 <Header />
             </Box>
             <Box sx={homePageProjectsCardBoxStyles}>
-                {projectsDetails.map(
+                {projectsData.map(
                     ({
                         imgPath,
                         name,
