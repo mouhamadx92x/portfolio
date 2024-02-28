@@ -37,3 +37,9 @@ export const FOOTER_CONTACT_FORM_TEXT_FIELD_NAME_LABEL = "Name:";
 export const FOOTER_CONTACT_FORM_TEXT_FIELD_EMAIL_LABEL = "E-mail:";
 
 export const PROJECT_CARD_LINK_LABEL = "visit the project";
+
+export const PROJECT_NAME_TODO = "TO DO";
+
+export const PROJECT_NAME_WEATHER = "Weather";
+
+export const PROJECT_NAME_VIDEOS_STUDIO = "Videos Studio";

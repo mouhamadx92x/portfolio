@@ -1,6 +1,12 @@
+import {
+    PROJECT_NAME_TODO,
+    PROJECT_NAME_WEATHER,
+    PROJECT_NAME_VIDEOS_STUDIO,
+} from "../constants/text";
+
 export const projectsData = [
     {
-        name: "TO DO",
+        name: PROJECT_NAME_TODO,
         id: "1",
         projectNumber: "0 1",
         description:
@@ -10,7 +16,7 @@ export const projectsData = [
         creationDate: "8/23",
     },
     {
-        name: "Weather",
+        name: PROJECT_NAME_WEATHER,
         id: "2",
         projectNumber: "0 2",
         description:
@@ -20,7 +26,7 @@ export const projectsData = [
         creationDate: "9/23",
     },
     {
-        name: "Videos Studio",
+        name: PROJECT_NAME_VIDEOS_STUDIO,
         id: "3",
         projectNumber: "0 3",
         description:
