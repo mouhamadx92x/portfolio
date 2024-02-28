@@ -1,4 +1,4 @@
-import * as React from "react";
+import { useState, useRef } from "react";
 import { MobileStepper, Box, Button } from "@mui/material";
 import { KeyboardArrowLeft, KeyboardArrowRight } from "@mui/icons-material";
 import Slider, { Settings } from "react-slick";
@@ -29,7 +29,7 @@ const images = [
 ];
 
 const CarouselWithStepper = () => {
-    const [activeStep, setActiveStep] = React.useState(0);
+    const [activeStep, setActiveStep] = useState(0);
     const maxSteps = images.length;
 
     const settings: Settings = {
@@ -38,37 +38,41 @@ const CarouselWithStepper = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        beforeChange: (next) => setActiveStep(next),
     };
 
-    const sliderRef = React.useRef<Slider>(null);
+    const sliderRef = useRef<Slider>(null);
 
     const handleNext = () => {
-        sliderRef.current?.slickNext();
+        if (sliderRef.current) {
+            sliderRef.current.slickNext();
+            setActiveStep((prevStep) => (prevStep + 1) % maxSteps);
+        }
     };
 
     const handleBack = () => {
-        sliderRef.current?.slickPrev();
+        if (sliderRef.current) {
+            sliderRef.current.slickPrev();
+            setActiveStep((prevStep) => (prevStep - 1 + maxSteps) % maxSteps);
+        }
     };
 
     return (
-        <div>
+        <Box>
             <Slider ref={sliderRef} {...settings}>
                 {images.map((step) => (
-                    <div key={step.label}>
-                        <Box
-                            component="img"
-                            sx={{
-                                height: 255,
-                                display: "block",
-                                maxWidth: 400,
-                                overflow: "hidden",
-                                width: "100%",
-                            }}
-                            src={step.imgPath}
-                            alt={step.label}
-                        />
-                    </div>
+                    <Box
+                        key={step.label}
+                        component="img"
+                        sx={{
+                            height: 255,
+                            display: "block",
+                            maxWidth: 400,
+                            overflow: "hidden",
+                            width: "100%",
+                        }}
+                        src={step.imgPath}
+                        alt={step.label}
+                    />
                 ))}
             </Slider>
             <MobileStepper
@@ -96,7 +100,7 @@ const CarouselWithStepper = () => {
                     </Button>
                 }
             />
-        </div>
+        </Box>
     );
 };
 
