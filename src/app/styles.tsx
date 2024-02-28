@@ -1,3 +1,5 @@
+import { SHOE_WAX_COLOR } from "../../public/constants/colors";
+
 export const homePageMainBoxStyles = {
     background: "url(/images/background.jpg)",
     backgroundSize: "cover",
@@ -6,7 +8,7 @@ export const homePageMainBoxStyles = {
 };
 
 export const homePageProjectsCardBoxStyles = {
-    backgroundColor: "#2b2b2b",
+    backgroundColor: SHOE_WAX_COLOR,
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
