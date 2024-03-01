@@ -1,13 +1,12 @@
-import { Box, CardMedia, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import {
-    projectsCardImgBoxStyles,
     projectsCardBoxStyles,
-    projectsCardTypographyNameStyles,
-    projectsCardTypographyStyles,
-    projectsCardImgStyles,
     projectsCardTypographyBoxStyles,
 } from "./styles";
-import { PROJECT_CARD_LINK_LABEL } from "../../../../public/constants/text";
+import ProjectCardImage from "./card-media";
+import ProjectCardLink from "./link-typography";
+import ProjectCardTypography from "./typography";
+import ProjectCardTypographyProjectName from "./typography-project-name";
 interface productCardProp {
     imgPath: string;
     name: string;
@@ -25,31 +24,12 @@ const ProductCard = ({
 }: productCardProp) => {
     return (
         <Box sx={projectsCardBoxStyles}>
-            <Box sx={projectsCardImgBoxStyles}>
-                <CardMedia
-                    sx={projectsCardImgStyles}
-                    component="img"
-                    height="300"
-                    image={imgPath}
-                />
-            </Box>
+            <ProjectCardImage imgPath={imgPath} />
             <Box sx={projectsCardTypographyBoxStyles}>
-                <Typography sx={projectsCardTypographyStyles}>
-                    {creationDate}
-                </Typography>
-                <Typography variant="h3" sx={projectsCardTypographyNameStyles}>
-                    {name}
-                </Typography>
-                <Typography sx={projectsCardTypographyStyles}>
-                    {description}
-                </Typography>
-                <Typography
-                    sx={projectsCardTypographyStyles}
-                    component="a"
-                    href={webSiteLink}
-                >
-                    {PROJECT_CARD_LINK_LABEL}
-                </Typography>
+                <ProjectCardTypography text={creationDate} />
+                <ProjectCardTypographyProjectName text={name} />
+                <ProjectCardTypography text={description} />
+                <ProjectCardLink webSiteLink={webSiteLink} />
             </Box>
         </Box>
     );
