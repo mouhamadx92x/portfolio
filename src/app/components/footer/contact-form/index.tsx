@@ -1,40 +1,14 @@
 "use client";
-import { useRef, FormEvent } from "react";
 import { Box } from "@mui/material";
-import { sendEmail } from "@/utils/utils";
-import {
-    footerContactUsFromStyles,
-    footerContactUsFromMainBoxStyles,
-} from "./styles";
-import ContactFormMessageAndButton from "./contact-form-message-and-button";
-import ContactFormNameAndEmail from "./contact-form-name-and-email";
+import { footerContactUsFromMainBoxStyles } from "./styles";
 import ContactFormLabel from "./contact-form-label";
+import Form from "./form";
 
 const ContactForm = () => {
-    const ContactUsFormRef = useRef<HTMLFormElement>(null);
-
-    const sendEmailHandler = (event: FormEvent<HTMLFormElement>) => {
-        event.preventDefault();
-
-        const contactUsFormElement = ContactUsFormRef.current;
-
-        if (contactUsFormElement) {
-            sendEmail(contactUsFormElement);
-        }
-    };
-
     return (
         <Box sx={footerContactUsFromMainBoxStyles}>
             <ContactFormLabel />
-            <Box
-                component="form"
-                ref={ContactUsFormRef}
-                onSubmit={sendEmailHandler}
-                sx={footerContactUsFromStyles}
-            >
-                <ContactFormNameAndEmail />
-                <ContactFormMessageAndButton />
-            </Box>
+            <Form />
         </Box>
     );
 };
