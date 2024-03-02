@@ -9,21 +9,10 @@ import { homePageMainBoxStyles, homePageProjectsCardBoxStyles } from "./styles";
 import ProductCard from "./components/project-card";
 import { projectsData } from "../../public/assets/assets";
 import "../styles/global.css";
+import useScrollHeight from "@/hooks/useScrollHeight";
 
 const HomePage = () => {
-    const [boxHeight, setBoxHeight] = useState("500px");
-    useEffect(() => {
-        const handleScroll = () => {
-            const newHeight = Math.max(300, 500 - window.scrollY / 2) + "px";
-            setBoxHeight(newHeight);
-        };
-
-        window.addEventListener("scroll", handleScroll);
-
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
+    const boxHeight = useScrollHeight({ initialValue: 500 });
 
     return (
         <>
