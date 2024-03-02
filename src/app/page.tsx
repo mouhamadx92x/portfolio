@@ -4,7 +4,6 @@ import Header from "./components/header";
 import Footer from "./components/footer";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useEffect, useState } from "react";
 import { homePageMainBoxStyles, homePageProjectsCardBoxStyles } from "./styles";
 import ProductCard from "./components/project-card";
 import { projectsData } from "../../public/assets/assets";
