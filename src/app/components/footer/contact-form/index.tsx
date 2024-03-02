@@ -1,15 +1,14 @@
 "use client";
 import { useRef, FormEvent } from "react";
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import { sendEmail } from "@/utils/utils";
 import {
-    footerContactUsFormLabelStyles,
     footerContactUsFromStyles,
     footerContactUsFromMainBoxStyles,
 } from "./styles";
 import ContactFormMessageAndButton from "./contact-form-message-and-button";
 import ContactFormNameAndEmail from "./contact-form-name-and-email";
-import { FOOTER_CONTACT_FORM_SECTION_LABEL } from "../../../../../public/constants/text";
+import ContactFormLabel from "./contact-form-label";
 
 const ContactForm = () => {
     const ContactUsFormRef = useRef<HTMLFormElement>(null);
@@ -26,11 +25,7 @@ const ContactForm = () => {
 
     return (
         <Box sx={footerContactUsFromMainBoxStyles}>
-            <Typography
-                sx={{ ...footerContactUsFormLabelStyles, marginTop: "10px" }}
-            >
-                {FOOTER_CONTACT_FORM_SECTION_LABEL}
-            </Typography>
+            <ContactFormLabel />
             <Box
                 component="form"
                 ref={ContactUsFormRef}

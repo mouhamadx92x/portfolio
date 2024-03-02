@@ -18,7 +18,3 @@ export const footerContactUsFormNameAndEmailBoxStyles = {
     marginRight: "20px",
     height: "200px",
 };
-
-export const footerContactUsFormLabelStyles = {
-    marginBottom: "10px",
-};
