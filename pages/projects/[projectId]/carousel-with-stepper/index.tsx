@@ -44,6 +44,7 @@ const CarouselWithStepper = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
+        arrows: false,
     };
 
     const sliderRef = useRef<Slider>(null);

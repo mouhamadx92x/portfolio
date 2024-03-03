@@ -12,7 +12,15 @@ import { CheckCircle } from "@mui/icons-material";
 
 const ProjectDetails = () => {
     return (
-        <Box>
+        <Box
+            sx={{
+                backgroundColor: "#2b2b2b",
+                display: "flex",
+                flexDirection: "column",
+                alignContent: "center",
+                justifyContent: "center",
+            }}
+        >
             <CarouselWithStepper />
             <Typography>Name</Typography>
 
