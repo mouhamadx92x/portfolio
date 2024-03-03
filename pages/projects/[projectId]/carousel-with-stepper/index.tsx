@@ -4,6 +4,12 @@ import { KeyboardArrowLeft, KeyboardArrowRight } from "@mui/icons-material";
 import Slider, { Settings } from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import {
+    MobileStepperButtonStyles,
+    MobileStepperStyles,
+    carouselWithStepperMainBoxStyles,
+    sliderStyles,
+} from "./styles";
 
 const images = [
     {
@@ -57,19 +63,13 @@ const CarouselWithStepper = () => {
     };
 
     return (
-        <Box>
+        <Box sx={carouselWithStepperMainBoxStyles}>
             <Slider ref={sliderRef} {...settings}>
                 {images.map((step) => (
                     <Box
                         key={step.label}
                         component="img"
-                        sx={{
-                            height: 255,
-                            display: "block",
-                            maxWidth: 400,
-                            overflow: "hidden",
-                            width: "100%",
-                        }}
+                        sx={sliderStyles}
                         src={step.imgPath}
                         alt={step.label}
                     />
@@ -84,6 +84,7 @@ const CarouselWithStepper = () => {
                         size="small"
                         onClick={handleNext}
                         disabled={activeStep === maxSteps - 1}
+                        sx={MobileStepperButtonStyles}
                     >
                         Next
                         <KeyboardArrowRight />
@@ -94,11 +95,13 @@ const CarouselWithStepper = () => {
                         size="small"
                         onClick={handleBack}
                         disabled={activeStep === 0}
+                        sx={MobileStepperButtonStyles}
                     >
                         <KeyboardArrowLeft />
                         Back
                     </Button>
                 }
+                sx={MobileStepperStyles}
             />
         </Box>
     );
