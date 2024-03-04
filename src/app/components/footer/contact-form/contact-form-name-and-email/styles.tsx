@@ -6,5 +6,6 @@ export const footerContactUsFormNameAndEmailBoxStyles = {
 };
 
 export const footerContactUsFormLabelStyles = {
-    marginBottom: "6px",
+    marginBottom: "5px",
+    marginTop: "5px",
 };

@@ -1,3 +1,8 @@
+import {
+    PELICAN_TAN_COLOR,
+    SHOE_WAX_COLOR,
+} from "../../../../../../public/constants/colors";
+
 export const footerContactUsFormMessageAndButtonBoxStyles = {
     display: "flex",
     flexDirection: "column",
@@ -13,10 +18,10 @@ export const footerContactUsFormMessageTextFieldStyles = {
 };
 
 export const footerContactUsFormButtonStyles = {
-    backgroundColor: "rgb(198, 164, 126)",
-    color: "#2b2b2b",
+    backgroundColor: PELICAN_TAN_COLOR,
+    color: SHOE_WAX_COLOR,
     alignSelf: "flex-end",
     "&:hover": {
-        backgroundColor: "rgb(198, 164, 126)",
+        backgroundColor: PELICAN_TAN_COLOR,
     },
 };
