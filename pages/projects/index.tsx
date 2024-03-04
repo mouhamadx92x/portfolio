@@ -5,7 +5,7 @@ import {
     projectListMainBoxStyles,
     projectListTypographyLabelStyles,
 } from "./styles";
-import { PROJECT_LIST_LABEL } from "../../public/text";
+import { PROJECT_LIST_LABEL } from "../../public/constants/text";
 
 function ProjectList() {
     return (
