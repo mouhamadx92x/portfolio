@@ -4,6 +4,7 @@ export const projectListMainBoxStyles = {
     alignItems: "center",
     justifyContent: "center",
     backgroundColor: "#2b2b2b",
+    paddingTop: "50px",
 };
 
 export const projectListTypographyLabelStyles = {
