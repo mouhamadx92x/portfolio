@@ -16,7 +16,7 @@ import {
     FOOTER_CONTACT_ADDRESS_STREET,
     FOOTER_CONTACT_ADDRESS_POST_CODE,
     FOOTER_CONTACT_COPY_RIGHT,
-} from "../../../../../public/text";
+} from "../../../../../public/constants/text";
 
 const FooterContactDetails = () => {
     return (

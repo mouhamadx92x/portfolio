@@ -7,7 +7,7 @@ import {
 import {
     FOOTER_CONTACT_FORM_TEXT_FIELD_NAME_LABEL,
     FOOTER_CONTACT_FORM_TEXT_FIELD_EMAIL_LABEL,
-} from "../../../../../../public/text";
+} from "../../../../../../public/constants/text";
 
 const ContactFormNameAndEmail = () => {
     return (

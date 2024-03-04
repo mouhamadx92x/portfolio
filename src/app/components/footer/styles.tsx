@@ -1,12 +1,13 @@
+import {
+    BLACK_COLOR,
+    GREY_SHINGLE_COLOR,
+} from "../../../../public/constants/colors";
+
 export const footerMainBoxStyles = {
-    height: "300px",
-    backgroundColor: "#000",
-    color: "#949494",
+    height: "350px",
+    backgroundColor: BLACK_COLOR,
+    color: GREY_SHINGLE_COLOR,
     display: "flex",
     justifyContent: "space-between",
     padding: "30px",
-};
-
-export const footerContactUsFormLabelStyles = {
-    marginBottom: "6px",
 };
