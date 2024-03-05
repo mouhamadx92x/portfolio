@@ -1,17 +1,10 @@
-import {
-    Box,
-    Link,
-    List,
-    ListItem,
-    ListItemIcon,
-    ListItemText,
-    Typography,
-} from "@mui/material";
+import { Box, List, ListItem, ListItemIcon, ListItemText } from "@mui/material";
 import CarouselWithStepper from "./carousel-with-stepper/index";
 import { CheckCircle } from "@mui/icons-material";
 import Footer from "@/app/components/footer";
 import Header from "@/app/components/header";
 import CustomTypography from "@/app/components/custom-components/CustomTypography";
+import NavigationLink from "@/app/components/custom-components/navigation-link";
 
 const ProjectDetails = () => {
     return (
@@ -107,27 +100,23 @@ const ProjectDetails = () => {
                         alignItems: "center",
                     }}
                 >
-                    <Link
-                        href="#"
-                        underline="none"
+                    <NavigationLink
+                        label="Back to Projects"
+                        path="#"
                         sx={{ color: "#857b5f", fontSize: "25px" }}
-                    >
-                        Back to Projects
-                    </Link>
-                    <Link
-                        href="#"
-                        underline="none"
+                    />
+
+                    <NavigationLink
+                        label="see the live project"
+                        path="#"
                         sx={{ color: "#857b5f", fontSize: "25px" }}
-                    >
-                        see the live project
-                    </Link>
-                    <Link
-                        href="#"
-                        underline="none"
+                    />
+
+                    <NavigationLink
+                        label="Github"
+                        path="#"
                         sx={{ color: "#857b5f", fontSize: "25px" }}
-                    >
-                        Github
-                    </Link>
+                    />
                 </Box>
             </Box>
             <Footer />
