@@ -5,6 +5,7 @@ import Footer from "@/app/components/footer";
 import Header from "@/app/components/header";
 import CustomTypography from "@/app/components/custom-components/CustomTypography";
 import NavigationLink from "@/app/components/custom-components/navigation-link";
+import ProjectDetailsNavBar from "./nav-bar";
 
 const ProjectDetails = () => {
     return (
@@ -92,32 +93,10 @@ const ProjectDetails = () => {
                     </Box>
                 </Box>
 
-                <Box
-                    sx={{
-                        width: "900px",
-                        display: "flex",
-                        justifyContent: "space-between",
-                        alignItems: "center",
-                    }}
-                >
-                    <NavigationLink
-                        label="Back to Projects"
-                        path="#"
-                        sx={{ color: "#857b5f", fontSize: "25px" }}
-                    />
-
-                    <NavigationLink
-                        label="see the live project"
-                        path="#"
-                        sx={{ color: "#857b5f", fontSize: "25px" }}
-                    />
-
-                    <NavigationLink
-                        label="Github"
-                        path="#"
-                        sx={{ color: "#857b5f", fontSize: "25px" }}
-                    />
-                </Box>
+                <ProjectDetailsNavBar
+                    liveProjectLink="#"
+                    githubRepositoryLink="#"
+                />
             </Box>
             <Footer />
         </>
