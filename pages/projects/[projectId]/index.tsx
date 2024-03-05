@@ -11,6 +11,7 @@ import CarouselWithStepper from "./carousel-with-stepper/index";
 import { CheckCircle } from "@mui/icons-material";
 import Footer from "@/app/components/footer";
 import Header from "@/app/components/header";
+import CustomTypography from "@/app/components/custom-components/CustomTypography";
 
 const ProjectDetails = () => {
     return (
@@ -29,12 +30,11 @@ const ProjectDetails = () => {
                 }}
             >
                 <CarouselWithStepper />
-                <Typography
+                <CustomTypography
+                    text="Name"
                     variant="h3"
                     sx={{ margin: "20px", color: "#857b5f" }}
-                >
-                    Name
-                </Typography>
+                />
 
                 <Box
                     sx={{
@@ -52,18 +52,18 @@ const ProjectDetails = () => {
                             margin: "10px",
                         }}
                     >
-                        <Typography
+                        <CustomTypography
+                            text="description:"
                             variant="h4"
                             sx={{ marginBottom: "20px", color: "#857b5f" }}
-                        >
-                            description:
-                        </Typography>
-                        <Typography sx={{ color: "#d5d5d5" }}>
+                        />
+                        <CustomTypography
+                            text="BlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBla
                             BlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBla
                             BlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBla
-                            BlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBla
-                            BlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBla
-                        </Typography>
+                            BlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBla"
+                            sx={{ color: "#d5d5d5" }}
+                        />
                     </Box>
                     <Box
                         sx={{
@@ -73,12 +73,12 @@ const ProjectDetails = () => {
                             margin: "10px",
                         }}
                     >
-                        <Typography
+                        <CustomTypography
+                            text="Feature:"
                             variant="h4"
                             sx={{ marginBottom: "20px", color: "#857b5f" }}
-                        >
-                            Feature:
-                        </Typography>
+                        />
+
                         <List sx={{ color: "#d5d5d5" }}>
                             {[
                                 "adding tasks",
