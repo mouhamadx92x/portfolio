@@ -6,38 +6,25 @@ import CustomTypography from "@/app/components/custom-components/CustomTypograph
 import ProjectDetailsNavBar from "./nav-bar";
 import ProjectDescription from "./description";
 import ProjectFeature from "./feature";
+import {
+    projectDetailsFeatureAndDescriptionBoxStyles,
+    projectDetailsMainBoxStyles,
+    projectDetailsNameLabelStyles,
+} from "./styles";
 
 const ProjectDetails = () => {
     return (
         <>
             <Header />
-            <Box
-                sx={{
-                    backgroundColor: "#2b2b2b",
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    height: "100%",
-                    padding: "20px",
-                    paddingTop: "70px",
-                }}
-            >
+            <Box sx={projectDetailsMainBoxStyles}>
                 <CarouselWithStepper />
                 <CustomTypography
                     text="Name"
                     variant="h3"
-                    sx={{ margin: "20px", color: "#857b5f" }}
+                    sx={projectDetailsNameLabelStyles}
                 />
 
-                <Box
-                    sx={{
-                        width: "900px",
-                        display: "flex",
-                        justifyContent: "space-between",
-                        alignItems: "center",
-                    }}
-                >
+                <Box sx={projectDetailsFeatureAndDescriptionBoxStyles}>
                     <ProjectDescription ProjectDescription="hola" />
                     <ProjectFeature featuresList={["ola", "one", "tow"]} />
                 </Box>
