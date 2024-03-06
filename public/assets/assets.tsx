@@ -34,6 +34,7 @@ export const projectsData = [
         ],
         webSiteLink: "https://todo-app-mou.netlify.app/",
         creationDate: "8/23",
+        feature: ["add task", "delete task", "mark task as complete"],
     },
     {
         name: PROJECT_NAME_WEATHER,
@@ -50,6 +51,7 @@ export const projectsData = [
         ],
         webSiteLink: "https://weather-app-mou.netlify.app/",
         creationDate: "9/23",
+        feature: ["search in any language", "unlimited search times"],
     },
     {
         name: PROJECT_NAME_VIDEOS_STUDIO,
@@ -65,5 +67,10 @@ export const projectsData = [
         ],
         webSiteLink: "https://videos-gallery.netlify.app/",
         creationDate: "1/24",
+        feature: [
+            "list of videos",
+            "open single video",
+            "send a message in the form",
+        ],
     },
 ];
