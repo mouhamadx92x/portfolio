@@ -1,4 +1,12 @@
 import {
+    TO_DO_PROJECT_GITHUB_LINK,
+    TO_DO_PROJECT_LIVE_LINK,
+    WEATHER_PROJECT_GITHUB_LINK,
+    WEATHER_PROJECT_LIVE_LINK,
+    VIDEOS_STUDIO_PROJECT_LIVE_LINK,
+    VIDEOS_STUDIO_PROJECT_GITHUB_LINK,
+} from "../constants/links";
+import {
     PROJECT_TODO_IMAGE_PATH,
     PROJECT_TODO_IMAGE_PATH_01,
     PROJECT_TODO_IMAGE_PATH_02,
@@ -32,7 +40,8 @@ export const projectsData = [
             PROJECT_TODO_IMAGE_PATH_02,
             PROJECT_TODO_IMAGE_PATH_03,
         ],
-        webSiteLink: "https://todo-app-mou.netlify.app/",
+        webSiteLink: TO_DO_PROJECT_LIVE_LINK,
+        githubLink: TO_DO_PROJECT_GITHUB_LINK,
         creationDate: "8/23",
         feature: ["add task", "delete task", "mark task as complete"],
     },
@@ -49,7 +58,8 @@ export const projectsData = [
             PROJECT_WEATHER_IMAGE_PATH_03,
             PROJECT_WEATHER_IMAGE_PATH_04,
         ],
-        webSiteLink: "https://weather-app-mou.netlify.app/",
+        webSiteLink: WEATHER_PROJECT_LIVE_LINK,
+        githubLink: WEATHER_PROJECT_GITHUB_LINK,
         creationDate: "9/23",
         feature: ["search in any language", "unlimited search times"],
     },
@@ -65,7 +75,8 @@ export const projectsData = [
             PROJECT_VIDEOS_STUDIO_IMAGE_PATH_02,
             PROJECT_VIDEOS_STUDIO_IMAGE_PATH_03,
         ],
-        webSiteLink: "https://videos-gallery.netlify.app/",
+        webSiteLink: VIDEOS_STUDIO_PROJECT_LIVE_LINK,
+        githubLink: VIDEOS_STUDIO_PROJECT_GITHUB_LINK,
         creationDate: "1/24",
         feature: [
             "list of videos",
