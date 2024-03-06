@@ -6,6 +6,7 @@ import Header from "@/app/components/header";
 import CustomTypography from "@/app/components/custom-components/CustomTypography";
 import NavigationLink from "@/app/components/custom-components/navigation-link";
 import ProjectDetailsNavBar from "./nav-bar";
+import ProjectDescription from "./description";
 
 const ProjectDetails = () => {
     return (
@@ -38,27 +39,7 @@ const ProjectDetails = () => {
                         alignItems: "center",
                     }}
                 >
-                    <Box
-                        sx={{
-                            minWidth: "300px",
-                            maxWidth: "400px",
-                            overflow: "hidden",
-                            margin: "10px",
-                        }}
-                    >
-                        <CustomTypography
-                            text="description:"
-                            variant="h4"
-                            sx={{ marginBottom: "20px", color: "#857b5f" }}
-                        />
-                        <CustomTypography
-                            text="BlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBla
-                            BlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBla
-                            BlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBla
-                            BlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBla"
-                            sx={{ color: "#d5d5d5" }}
-                        />
-                    </Box>
+                    <ProjectDescription ProjectDescription="hola" />
                     <Box
                         sx={{
                             minWidth: "300px",
