@@ -6,6 +6,7 @@ import {
     projectDescriptionLabelStyles,
     projectDescriptionTextStyles,
 } from "./styles";
+import { PROJECT_DETAILS_DESCRIPTION_LABEL } from "../../../../public/constants/text";
 
 interface ProjectDescriptionProps {
     ProjectDescription: string;
@@ -17,7 +18,7 @@ const ProjectDescription = ({
     return (
         <Box sx={projectDescriptionBoxStyles}>
             <CustomTypography
-                text="description:"
+                text={PROJECT_DETAILS_DESCRIPTION_LABEL}
                 variant="h4"
                 sx={projectDescriptionLabelStyles}
             />

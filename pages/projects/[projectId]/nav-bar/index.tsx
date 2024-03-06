@@ -5,6 +5,11 @@ import {
     projectDetailsNavBarBoxStyles,
     projectDetailsNavigationLinkStyles,
 } from "./styles";
+import {
+    PROJECT_DETAILS_NAVBAR_LABEL_BACK,
+    PROJECT_DETAILS_NAVBAR_LABEL_GITHUB,
+    PROJECT_DETAILS_NAVBAR_LABEL_LIVE_PROJECT,
+} from "../../../../public/constants/text";
 
 interface NavBarProps {
     liveProjectLink: string;
@@ -18,19 +23,19 @@ const ProjectDetailsNavBar = ({
     return (
         <Box sx={projectDetailsNavBarBoxStyles}>
             <NavigationLink
-                label="Back to Projects"
+                label={PROJECT_DETAILS_NAVBAR_LABEL_BACK}
                 path={PROJECTS_PATH}
                 sx={projectDetailsNavigationLinkStyles}
             />
 
             <NavigationLink
-                label="see the live project"
+                label={PROJECT_DETAILS_NAVBAR_LABEL_LIVE_PROJECT}
                 path={liveProjectLink}
                 sx={projectDetailsNavigationLinkStyles}
             />
 
             <NavigationLink
-                label="Github"
+                label={PROJECT_DETAILS_NAVBAR_LABEL_GITHUB}
                 path={githubRepositoryLink}
                 sx={projectDetailsNavigationLinkStyles}
             />

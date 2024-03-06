@@ -45,3 +45,17 @@ export const PROJECT_NAME_TODO = "TO DO";
 export const PROJECT_NAME_WEATHER = "Weather";
 
 export const PROJECT_NAME_VIDEOS_STUDIO = "Videos Studio";
+
+export const PROJECT_DETAILS_SLIDER_BUTTON_LABEL_NEXT = "Next";
+
+export const PROJECT_DETAILS_SLIDER_BUTTON_LABEL_BACK = "Back";
+
+export const PROJECT_DETAILS_DESCRIPTION_LABEL = "Description:";
+
+export const PROJECT_DETAILS_FEATURE_LABEL = "Feature:";
+
+export const PROJECT_DETAILS_NAVBAR_LABEL_BACK = "Back";
+
+export const PROJECT_DETAILS_NAVBAR_LABEL_GITHUB = "Github";
+
+export const PROJECT_DETAILS_NAVBAR_LABEL_LIVE_PROJECT = "Live project";

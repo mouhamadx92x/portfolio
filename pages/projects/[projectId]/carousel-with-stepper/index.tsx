@@ -10,6 +10,10 @@ import {
     carouselWithStepperMainBoxStyles,
     sliderStyles,
 } from "./styles";
+import {
+    PROJECT_DETAILS_SLIDER_BUTTON_LABEL_BACK,
+    PROJECT_DETAILS_SLIDER_BUTTON_LABEL_NEXT,
+} from "../../../../public/constants/text";
 
 const images = [
     {
@@ -87,7 +91,7 @@ const CarouselWithStepper = () => {
                         disabled={activeStep === maxSteps - 1}
                         sx={MobileStepperButtonStyles}
                     >
-                        Next
+                        {PROJECT_DETAILS_SLIDER_BUTTON_LABEL_NEXT}
                         <KeyboardArrowRight />
                     </Button>
                 }
@@ -99,7 +103,7 @@ const CarouselWithStepper = () => {
                         sx={MobileStepperButtonStyles}
                     >
                         <KeyboardArrowLeft />
-                        Back
+                        {PROJECT_DETAILS_SLIDER_BUTTON_LABEL_BACK}
                     </Button>
                 }
                 sx={MobileStepperStyles}

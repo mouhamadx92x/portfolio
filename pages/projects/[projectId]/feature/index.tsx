@@ -7,6 +7,7 @@ import {
     projectFeatureListStyles,
     projectFeatureIconStyles,
 } from "./styles";
+import { PROJECT_DETAILS_FEATURE_LABEL } from "../../../../public/constants/text";
 
 interface ProjectFeatureProps {
     featuresList: string[];
@@ -16,7 +17,7 @@ const ProjectFeature = ({ featuresList }: ProjectFeatureProps) => {
     return (
         <Box sx={projectFeatureBoxStyles}>
             <CustomTypography
-                text="Feature:"
+                text={PROJECT_DETAILS_FEATURE_LABEL}
                 variant="h4"
                 sx={projectFeatureLabelStyles}
             />
