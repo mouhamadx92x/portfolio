@@ -6,17 +6,37 @@ import {
 } from "./styles";
 import Link from "next/link";
 interface projectImgProp {
-    number: string;
-    imgLink: string;
+    projectNumber: string;
+    imagesPath: string[];
+    id: string;
+    description: string;
+    webSiteLink: string;
+    githubLink: string;
+    feature: string[];
+    name: string;
 }
 
-const ProjectImg = ({ imgLink, number }: projectImgProp) => {
+const ProjectImg = ({
+    imagesPath,
+    projectNumber,
+    id,
+    description,
+    webSiteLink,
+    githubLink,
+    feature,
+    name,
+}: projectImgProp) => {
     return (
         <Link
             href={{
-                pathname: `projects/${number}`,
+                pathname: `projects/${id}`,
                 query: {
-                    imgLink: imgLink,
+                    description,
+                    imagesPath,
+                    webSiteLink,
+                    githubLink,
+                    feature,
+                    name,
                 },
             }}
         >
@@ -25,12 +45,12 @@ const ProjectImg = ({ imgLink, number }: projectImgProp) => {
                     component="img"
                     height="100%"
                     width="100%"
-                    image={imgLink}
+                    image={imagesPath[0]}
                     alt="Card image"
                 />
                 <Box sx={projectImgOverlayStyles}>
                     <Typography variant="h1" sx={projectImgNumberStyles}>
-                        {number}
+                        {projectNumber}
                     </Typography>
                 </Box>
             </Box>

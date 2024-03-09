@@ -9,6 +9,7 @@ import { PROJECT_LIST_LABEL } from "../../public/constants/text";
 import Footer from "@/app/components/footer";
 import Header from "@/app/components/header";
 import "../../src/styles/global.css";
+import { projectsData } from "../../public/assets/assets";
 
 const ProjectList = () => {
     return (
@@ -18,12 +19,30 @@ const ProjectList = () => {
                 <Typography variant="h4" sx={projectListTypographyLabelStyles}>
                     {PROJECT_LIST_LABEL}
                 </Typography>
-                <ProjectImg imgLink={"/images/To-do.png"} number={"1"} />
-                <ProjectImg
-                    imgLink={"/images/Videos-studio.png"}
-                    number={"2"}
-                />
-                <ProjectImg imgLink={"/images/Weather.png"} number={"3"} />
+                {projectsData.map(
+                    ({
+                        id,
+                        imagesPath,
+                        projectNumber,
+                        description,
+                        webSiteLink,
+                        githubLink,
+                        feature,
+                        name,
+                    }) => (
+                        <ProjectImg
+                            imagesPath={imagesPath}
+                            projectNumber={projectNumber}
+                            key={id}
+                            id={id}
+                            description={description}
+                            webSiteLink={webSiteLink}
+                            githubLink={githubLink}
+                            feature={feature}
+                            name={name}
+                        />
+                    )
+                )}
             </Box>
             <Footer />
         </>

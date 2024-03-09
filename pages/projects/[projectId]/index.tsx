@@ -11,27 +11,34 @@ import {
     projectDetailsMainBoxStyles,
     projectDetailsNameLabelStyles,
 } from "./styles";
+import { useRouter } from "next/router";
 
 const ProjectDetails = () => {
+    const router = useRouter();
+    const { description, feature, webSiteLink, githubLink, name, imagesPath } =
+        router.query;
+    console.log(typeof description);
+    console.log(name);
+
     return (
         <>
             <Header />
             <Box sx={projectDetailsMainBoxStyles}>
-                <CarouselWithStepper />
+                <CarouselWithStepper imagesPath={imagesPath} />
                 <CustomTypography
-                    text="Name"
+                    text={name}
                     variant="h3"
                     sx={projectDetailsNameLabelStyles}
                 />
 
                 <Box sx={projectDetailsFeatureAndDescriptionBoxStyles}>
-                    <ProjectDescription ProjectDescription="hola" />
-                    <ProjectFeature featuresList={["ola", "one", "tow"]} />
+                    <ProjectDescription ProjectDescription={description} />
+                    <ProjectFeature featuresList={feature} />
                 </Box>
 
                 <ProjectDetailsNavBar
-                    liveProjectLink="#"
-                    githubRepositoryLink="#"
+                    liveProjectLink={webSiteLink}
+                    githubRepositoryLink={githubLink}
                 />
             </Box>
             <Footer />
