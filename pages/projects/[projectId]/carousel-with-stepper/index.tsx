@@ -17,16 +17,22 @@ const CarouselWithStepper = ({ imagesPath }: CarouselWithStepperProps) => {
 
     const sliderRef = useRef<Slider>(null);
 
+    const slider = sliderRef.current;
+
     const handleNext = () => {
-        if (sliderRef.current) {
-            sliderRef.current.slickNext();
+        const slider = sliderRef.current;
+
+        if (slider) {
+            slider.slickNext();
             setActiveStep((prevStep) => (prevStep + 1) % maxSteps);
         }
     };
 
     const handleBack = () => {
-        if (sliderRef.current) {
-            sliderRef.current.slickPrev();
+        const slider = sliderRef.current;
+
+        if (slider) {
+            slider.slickPrev();
             setActiveStep((prevStep) => (prevStep - 1 + maxSteps) % maxSteps);
         }
     };
