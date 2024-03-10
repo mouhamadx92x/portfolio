@@ -14,6 +14,7 @@ import {
     PROJECT_DETAILS_SLIDER_BUTTON_LABEL_BACK,
     PROJECT_DETAILS_SLIDER_BUTTON_LABEL_NEXT,
 } from "../../../../public/constants/text";
+import ImagesSlider from "./slider";
 
 interface CarouselWithStepperProps {
     imagesPath: string[];
@@ -21,17 +22,7 @@ interface CarouselWithStepperProps {
 
 const CarouselWithStepper = ({ imagesPath }: CarouselWithStepperProps) => {
     const [activeStep, setActiveStep] = useState(0);
-    // const maxSteps = imagesPath.length;
-    const maxSteps = 4;
-
-    const settings: Settings = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-    };
+    const maxSteps = imagesPath.length;
 
     const sliderRef = useRef<Slider>(null);
 
@@ -51,11 +42,7 @@ const CarouselWithStepper = ({ imagesPath }: CarouselWithStepperProps) => {
 
     return (
         <Box sx={carouselWithStepperMainBoxStyles}>
-            <Slider ref={sliderRef} {...settings}>
-                {imagesPath.map((imagePath) => (
-                    <Box component="img" sx={sliderStyles} src={imagePath} />
-                ))}
-            </Slider>
+            <ImagesSlider imagesPath={imagesPath} sliderRef={sliderRef} />
             <MobileStepper
                 steps={maxSteps}
                 position="static"
