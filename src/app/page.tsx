@@ -21,7 +21,7 @@ const HomePage = () => {
             <Box sx={homePageProjectsCardBoxStyles}>
                 {projectsData.map(
                     ({
-                        imgPath,
+                        imagesPath,
                         name,
                         creationDate,
                         webSiteLink,
@@ -30,7 +30,7 @@ const HomePage = () => {
                     }) => (
                         <ProductCard
                             key={id}
-                            imgPath={imgPath}
+                            imagesPath={imagesPath}
                             name={name}
                             creationDate={creationDate}
                             webSiteLink={webSiteLink}

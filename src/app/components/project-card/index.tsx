@@ -8,7 +8,7 @@ import ProjectCardLink from "./link-typography";
 import ProjectCardTypography from "./typography";
 import ProjectCardTypographyProjectName from "./typography-project-name";
 interface productCardProp {
-    imgPath: string;
+    imagesPath: string[];
     name: string;
     creationDate: string;
     description: string;
@@ -16,7 +16,7 @@ interface productCardProp {
 }
 
 const ProductCard = ({
-    imgPath,
+    imagesPath,
     name,
     creationDate,
     description,
@@ -24,7 +24,7 @@ const ProductCard = ({
 }: productCardProp) => {
     return (
         <Box sx={projectsCardBoxStyles}>
-            <ProjectCardImage imgPath={imgPath} />
+            <ProjectCardImage imgPath={imagesPath[0]} />
             <Box sx={projectsCardTypographyBoxStyles}>
                 <ProjectCardTypography text={creationDate} />
                 <ProjectCardTypographyProjectName text={name} />
