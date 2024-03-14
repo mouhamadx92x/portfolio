@@ -9,7 +9,7 @@ export const projectDetailsMainBoxStyles = {
     paddingTop: "70px",
 };
 
-export const projectDetailsFeatureAndDescriptionBoxStyles = {
+export const projectDetailsNameAndDescriptionBoxStyles = {
     width: "900px",
     display: "flex",
     justifyContent: "space-between",
@@ -20,3 +20,5 @@ export const projectDetailsNameLabelStyles = {
     margin: "20px",
     color: "#857b5f",
 };
+
+export const projectDetailsNameAndIconsStyles = { minWidth: "400px" };

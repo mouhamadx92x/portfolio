@@ -7,8 +7,9 @@ import ProjectDetailsNavBar from "./nav-bar";
 import ProjectDescription from "./description";
 import ProjectStackIcons from "./icons/index";
 import {
-    projectDetailsFeatureAndDescriptionBoxStyles,
+    projectDetailsNameAndDescriptionBoxStyles,
     projectDetailsMainBoxStyles,
+    projectDetailsNameAndIconsStyles,
     projectDetailsNameLabelStyles,
 } from "./styles";
 import { useRouter } from "next/router";
@@ -28,20 +29,22 @@ const ProjectDetails = () => {
             <Header />
             <Box sx={projectDetailsMainBoxStyles}>
                 <CarouselWithStepper imagesPath={imagesPath} />
-                <CustomTypography
-                    text={name}
-                    variant="h3"
-                    sx={projectDetailsNameLabelStyles}
-                />
 
                 <ProjectDetailsNavBar
                     liveProjectLink={webSiteLink}
                     githubRepositoryLink={githubLink}
                 />
 
-                <Box sx={projectDetailsFeatureAndDescriptionBoxStyles}>
+                <Box sx={projectDetailsNameAndDescriptionBoxStyles}>
+                    <Box sx={projectDetailsNameAndIconsStyles}>
+                        <CustomTypography
+                            text={name}
+                            variant="h3"
+                            sx={projectDetailsNameLabelStyles}
+                        />
+                        <ProjectStackIcons stackIconsPaths={stackIconsPaths} />
+                    </Box>
                     <ProjectDescription ProjectDescription={description} />
-                    <ProjectStackIcons stackIconsPaths={stackIconsPaths} />
                 </Box>
             </Box>
             <Footer />
