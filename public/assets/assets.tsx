@@ -51,11 +51,7 @@ export const projectsData = [
         webSiteLink: TO_DO_PROJECT_LIVE_LINK,
         githubLink: TO_DO_PROJECT_GITHUB_LINK,
         creationDate: "8/23",
-        stack: [
-            { name: "React", iconPath: REACT_ICON_PATH },
-            { name: "JavaScript", iconPath: JS_ICON_PATH },
-            { name: "CSS", iconPath: CSS_ICON_PATH },
-        ],
+        stackIconsPaths: [REACT_ICON_PATH, JS_ICON_PATH, CSS_ICON_PATH],
     },
     {
         name: PROJECT_NAME_WEATHER,
@@ -73,11 +69,7 @@ export const projectsData = [
         webSiteLink: WEATHER_PROJECT_LIVE_LINK,
         githubLink: WEATHER_PROJECT_GITHUB_LINK,
         creationDate: "9/23",
-        stack: [
-            { name: "React", iconPath: REACT_ICON_PATH },
-            { name: "JavaScript", iconPath: JS_ICON_PATH },
-            { name: "CSS", iconPath: CSS_ICON_PATH },
-        ],
+        stackIconsPaths: [REACT_ICON_PATH, JS_ICON_PATH, CSS_ICON_PATH],
     },
     {
         name: PROJECT_NAME_VIDEOS_STUDIO,
@@ -94,10 +86,6 @@ export const projectsData = [
         webSiteLink: VIDEOS_STUDIO_PROJECT_LIVE_LINK,
         githubLink: VIDEOS_STUDIO_PROJECT_GITHUB_LINK,
         creationDate: "1/24",
-        stack: [
-            { name: "React", iconPath: REACT_ICON_PATH },
-            { name: "TypeScript", iconPath: TS_ICON_PATH },
-            { name: "MUI", iconPath: MUI_ICON_PATH },
-        ],
+        stack: [REACT_ICON_PATH, TS_ICON_PATH, MUI_ICON_PATH],
     },
 ];
