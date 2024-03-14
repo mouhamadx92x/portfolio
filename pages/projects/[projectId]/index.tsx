@@ -5,7 +5,7 @@ import Header from "@/app/components/header";
 import CustomTypography from "@/app/components/custom-components/CustomTypography";
 import ProjectDetailsNavBar from "./nav-bar";
 import ProjectDescription from "./description";
-import ProjectFeature from "./feature";
+import ProjectStackIcons from "./icons/index";
 import {
     projectDetailsFeatureAndDescriptionBoxStyles,
     projectDetailsMainBoxStyles,
@@ -36,7 +36,7 @@ const ProjectDetails = () => {
 
                 <Box sx={projectDetailsFeatureAndDescriptionBoxStyles}>
                     <ProjectDescription ProjectDescription={description} />
-                    <ProjectFeature stackIconsPaths={stackIconsPaths} />
+                    <ProjectStackIcons stackIconsPaths={stackIconsPaths} />
                 </Box>
 
                 <ProjectDetailsNavBar
