@@ -12,8 +12,8 @@ interface projectImgProp {
     description: string;
     webSiteLink: string;
     githubLink: string;
-    feature: string[];
     name: string;
+    stackIconsPaths: string[];
 }
 
 const ProjectImg = ({
@@ -23,8 +23,8 @@ const ProjectImg = ({
     description,
     webSiteLink,
     githubLink,
-    feature,
     name,
+    stackIconsPaths,
 }: projectImgProp) => {
     return (
         <Link
@@ -35,8 +35,8 @@ const ProjectImg = ({
                     imagesPath,
                     webSiteLink,
                     githubLink,
-                    feature,
                     name,
+                    stackIconsPaths,
                 },
             }}
         >

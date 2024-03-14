@@ -17,7 +17,7 @@ const ProjectDetails = () => {
     const router = useRouter();
 
     const description = router.query.description as string;
-    const feature = router.query.feature as string[];
+    const stackIconsPaths = router.query.stackIconsPaths as string[];
     const webSiteLink = router.query.webSiteLink as string;
     const githubLink = router.query.githubLink as string;
     const name = router.query.name as string;
@@ -36,7 +36,7 @@ const ProjectDetails = () => {
 
                 <Box sx={projectDetailsFeatureAndDescriptionBoxStyles}>
                     <ProjectDescription ProjectDescription={description} />
-                    <ProjectFeature featuresList={feature} />
+                    <ProjectFeature stackIconsPaths={stackIconsPaths} />
                 </Box>
 
                 <ProjectDetailsNavBar
