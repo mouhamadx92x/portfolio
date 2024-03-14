@@ -34,15 +34,15 @@ const ProjectDetails = () => {
                     sx={projectDetailsNameLabelStyles}
                 />
 
-                <Box sx={projectDetailsFeatureAndDescriptionBoxStyles}>
-                    <ProjectDescription ProjectDescription={description} />
-                    <ProjectStackIcons stackIconsPaths={stackIconsPaths} />
-                </Box>
-
                 <ProjectDetailsNavBar
                     liveProjectLink={webSiteLink}
                     githubRepositoryLink={githubLink}
                 />
+
+                <Box sx={projectDetailsFeatureAndDescriptionBoxStyles}>
+                    <ProjectDescription ProjectDescription={description} />
+                    <ProjectStackIcons stackIconsPaths={stackIconsPaths} />
+                </Box>
             </Box>
             <Footer />
         </>
