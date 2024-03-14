@@ -34,3 +34,13 @@ export const PROJECT_VIDEOS_STUDIO_IMAGE_PATH_02 =
 
 export const PROJECT_VIDEOS_STUDIO_IMAGE_PATH_03 =
     "/images/Videos-studio-03.png";
+
+export const REACT_ICON_PATH = "/icons/react.png";
+
+export const MUI_ICON_PATH = "/icons/mui.png";
+
+export const JS_ICON_PATH = "/icons/js.png";
+
+export const TS_ICON_PATH = "/icons/ts.png";
+
+export const CSS_ICON_PATH = "/icons/css.jpeg";
