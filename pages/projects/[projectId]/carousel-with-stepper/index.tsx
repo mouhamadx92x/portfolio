@@ -13,11 +13,9 @@ interface CarouselWithStepperProps {
 
 const CarouselWithStepper = ({ imagesPath }: CarouselWithStepperProps) => {
     const [activeStep, setActiveStep] = useState(0);
-    const maxSteps = imagesPath.length;
+    const maxSteps = imagesPath?.length;
 
     const sliderRef = useRef<Slider>(null);
-
-    const slider = sliderRef.current;
 
     const handleNext = () => {
         const slider = sliderRef.current;
