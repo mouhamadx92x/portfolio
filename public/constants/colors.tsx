@@ -11,3 +11,5 @@ export const BLACK_COLOR = "#000";
 export const WHITE_COLOR = "#FFF";
 
 export const GREY_SHINGLE_COLOR = "#949494";
+
+export const BLEACHED_SILK_COLOR = "#f2f2f2";

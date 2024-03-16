@@ -1,4 +1,4 @@
-import { GREY_SHINGLE_COLOR } from "../../../../public/constants/colors";
+import { BLEACHED_SILK_COLOR } from "../../../../public/constants/colors";
 
 export const footerMainBoxStyles = {
     height: "350px",
@@ -7,5 +7,5 @@ export const footerMainBoxStyles = {
     justifyContent: "space-around",
     padding: "30px",
     width: "900px",
-    color: "#f2f2f2",
+    color: BLEACHED_SILK_COLOR,
 };
