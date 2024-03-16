@@ -30,11 +30,11 @@ export const CONTACT_US_FORM_MESSAGE_ERROR_OCCURRED = "An error occurred";
 
 export const FOOTER_CONTACT_FORM_SECTION_LABEL = "CONTACT ME:";
 
-export const FOOTER_CONTACT_FORM_TEXT_FIELD_MESSAGE_LABEL = "Message:";
+export const FOOTER_CONTACT_FORM_TEXT_FIELD_MESSAGE_LABEL = "Message: *";
 
-export const FOOTER_CONTACT_FORM_TEXT_FIELD_NAME_LABEL = "Name:";
+export const FOOTER_CONTACT_FORM_TEXT_FIELD_NAME_LABEL = "Name: *";
 
-export const FOOTER_CONTACT_FORM_TEXT_FIELD_EMAIL_LABEL = "E-mail:";
+export const FOOTER_CONTACT_FORM_TEXT_FIELD_EMAIL_LABEL = "E-mail: *";
 
 export const PROJECT_LIST_LABEL = " Projects:";
 
