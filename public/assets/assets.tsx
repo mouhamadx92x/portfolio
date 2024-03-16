@@ -27,6 +27,14 @@ import {
     PROJECT_NAME_VIDEOS_STUDIO,
 } from "../constants/text";
 
+import {
+    REACT_ICON_PATH,
+    MUI_ICON_PATH,
+    JS_ICON_PATH,
+    TS_ICON_PATH,
+    CSS_ICON_PATH,
+} from "../constants/paths";
+
 export const projectsData = [
     {
         name: PROJECT_NAME_TODO,
@@ -43,7 +51,7 @@ export const projectsData = [
         webSiteLink: TO_DO_PROJECT_LIVE_LINK,
         githubLink: TO_DO_PROJECT_GITHUB_LINK,
         creationDate: "8/23",
-        feature: ["add task", "delete task", "mark task as complete"],
+        stackIconsPaths: [REACT_ICON_PATH, JS_ICON_PATH, CSS_ICON_PATH],
     },
     {
         name: PROJECT_NAME_WEATHER,
@@ -61,7 +69,7 @@ export const projectsData = [
         webSiteLink: WEATHER_PROJECT_LIVE_LINK,
         githubLink: WEATHER_PROJECT_GITHUB_LINK,
         creationDate: "9/23",
-        feature: ["search in any language", "unlimited search times"],
+        stackIconsPaths: [REACT_ICON_PATH, JS_ICON_PATH, CSS_ICON_PATH],
     },
     {
         name: PROJECT_NAME_VIDEOS_STUDIO,
@@ -78,10 +86,6 @@ export const projectsData = [
         webSiteLink: VIDEOS_STUDIO_PROJECT_LIVE_LINK,
         githubLink: VIDEOS_STUDIO_PROJECT_GITHUB_LINK,
         creationDate: "1/24",
-        feature: [
-            "list of videos",
-            "open single video",
-            "send a message in the form",
-        ],
+        stack: [REACT_ICON_PATH, TS_ICON_PATH, MUI_ICON_PATH],
     },
 ];

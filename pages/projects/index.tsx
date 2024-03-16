@@ -27,8 +27,8 @@ const ProjectList = () => {
                         description,
                         webSiteLink,
                         githubLink,
-                        feature,
                         name,
+                        stackIconsPaths,
                     }) => (
                         <ProjectImg
                             imagesPath={imagesPath}
@@ -38,8 +38,8 @@ const ProjectList = () => {
                             description={description}
                             webSiteLink={webSiteLink}
                             githubLink={githubLink}
-                            feature={feature}
                             name={name}
+                            stackIconsPaths={stackIconsPaths}
                         />
                     )
                 )}

@@ -3,6 +3,7 @@ export const projectDetailsNavBarBoxStyles = {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
+    padding: "30px",
 };
 
 export const projectDetailsNavigationLinkStyles = {
