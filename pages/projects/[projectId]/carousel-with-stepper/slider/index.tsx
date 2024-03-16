@@ -16,6 +16,8 @@ const ImagesSlider = ({ imagesPath, sliderRef }: ImagesSliderProps) => {
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
+        autoplay: true,
+        autoplaySpeed: 3000,
     };
 
     return (
