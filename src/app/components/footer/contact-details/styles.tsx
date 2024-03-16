@@ -3,7 +3,8 @@ export const footerContactInfoBoxStyles = {
     flexDirection: "column",
     alignItems: "flex-start",
     justifyContent: "space-around",
-    height: "300px",
+    height: "350px",
+    color: "#f2f2f2",
 };
 
 export const footerContactDetailsBoxStyles = {
@@ -13,7 +14,8 @@ export const footerContactDetailsBoxStyles = {
 export const footerAddressDetailsBoxStyle = {
     display: "flex",
     flexDirection: "column",
-    marginLeft: "30px",
+    marginLeft: "20px",
+    marginRight: "15px",
 };
 
 export const footerPersonalContactDetailsBoxStyle = {
@@ -26,4 +28,4 @@ export const footerSocialMediaBoxStyle = {
     justifyContent: "start",
     width: "150px",
 };
-export const footerSocialMediaStyle = { color: "#949494", marginRight: "30px" };
+export const footerSocialMediaStyle = { color: "#f2f2f2", marginRight: "30px" };
