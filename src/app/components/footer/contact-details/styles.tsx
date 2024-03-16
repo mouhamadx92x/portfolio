@@ -5,7 +5,7 @@ export const footerContactInfoBoxStyles = {
     flexDirection: "column",
     alignItems: "flex-start",
     justifyContent: "space-around",
-    height: "350px",
+    height: "330px",
     color: BLEACHED_SILK_COLOR,
 };
 
