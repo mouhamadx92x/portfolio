@@ -1,5 +1,5 @@
 import {
-    BLACK_COLOR,
+    HYDRARGYRUM_COLOR,
     PELICAN_TAN_COLOR,
 } from "../../../../../public/constants/colors";
 
@@ -12,5 +12,5 @@ export const headerLinkTypographyStyles = {
 
 export const headerLinkStyles = {
     textDecoration: "none",
-    color: BLACK_COLOR,
+    color: HYDRARGYRUM_COLOR,
 };

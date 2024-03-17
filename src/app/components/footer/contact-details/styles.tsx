@@ -1,9 +1,12 @@
+import { BLEACHED_SILK_COLOR } from "../../../../../public/constants/colors";
+
 export const footerContactInfoBoxStyles = {
     display: "flex",
     flexDirection: "column",
     alignItems: "flex-start",
     justifyContent: "space-around",
-    height: "300px",
+    height: "330px",
+    color: BLEACHED_SILK_COLOR,
 };
 
 export const footerContactDetailsBoxStyles = {
@@ -13,7 +16,8 @@ export const footerContactDetailsBoxStyles = {
 export const footerAddressDetailsBoxStyle = {
     display: "flex",
     flexDirection: "column",
-    marginLeft: "30px",
+    marginLeft: "20px",
+    marginRight: "15px",
 };
 
 export const footerPersonalContactDetailsBoxStyle = {
@@ -26,4 +30,7 @@ export const footerSocialMediaBoxStyle = {
     justifyContent: "start",
     width: "150px",
 };
-export const footerSocialMediaStyle = { color: "#949494", marginRight: "30px" };
+export const footerSocialMediaStyle = {
+    color: BLEACHED_SILK_COLOR,
+    marginRight: "30px",
+};

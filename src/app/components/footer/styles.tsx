@@ -1,13 +1,11 @@
-import {
-    BLACK_COLOR,
-    GREY_SHINGLE_COLOR,
-} from "../../../../public/constants/colors";
+import { BLEACHED_SILK_COLOR } from "../../../../public/constants/colors";
 
 export const footerMainBoxStyles = {
     height: "350px",
-    backgroundColor: BLACK_COLOR,
-    color: GREY_SHINGLE_COLOR,
+    backgroundColor: "transparent",
     display: "flex",
-    justifyContent: "space-between",
+    justifyContent: "space-around",
     padding: "30px",
+    width: "900px",
+    color: BLEACHED_SILK_COLOR,
 };
