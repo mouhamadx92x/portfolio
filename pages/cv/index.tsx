@@ -3,6 +3,8 @@ import Image from "next/image";
 import { Box, Button } from "@mui/material";
 import FileSaver from "file-saver";
 import "../../src/styles/global.css";
+import Header from "@/app/components/header";
+import Footer from "@/app/components/footer";
 
 const ImageWithDownload: React.FC = () => {
     const imageSrc = "/images/cv.png";
@@ -31,51 +33,56 @@ const ImageWithDownload: React.FC = () => {
     };
 
     return (
-        <Box
-            sx={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                backgroundColor: "#2b2b2b",
-                padding: "20px",
-            }}
-        >
+        <>
+            <Header />
             <Box
                 sx={{
-                    marginBottom: 2,
                     display: "flex",
-                    alignContent: "space-between",
-                    justifyContent: "space-between",
-                    width: "500px",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    backgroundColor: "#2b2b2b",
+                    padding: "20px",
+                    paddingTop: "70px",
                 }}
             >
-                <Button
-                    variant="contained"
-                    color="primary"
-                    onClick={downloadImage}
-                    sx={{ color: "#f2f2f2", backgroundColor: "#857b5f" }}
+                <Box
+                    sx={{
+                        marginBottom: 2,
+                        display: "flex",
+                        alignContent: "space-between",
+                        justifyContent: "space-between",
+                        width: "500px",
+                    }}
                 >
-                    Download image
-                </Button>
-                <Button
-                    variant="contained"
-                    color="primary"
-                    onClick={downloadPdf}
-                >
-                    Download pdf
-                </Button>
+                    <Button
+                        variant="contained"
+                        color="primary"
+                        onClick={downloadImage}
+                        sx={{ color: "#f2f2f2", backgroundColor: "#857b5f" }}
+                    >
+                        Download image
+                    </Button>
+                    <Button
+                        variant="contained"
+                        color="primary"
+                        onClick={downloadPdf}
+                    >
+                        Download pdf
+                    </Button>
+                </Box>
+                <Image
+                    src={imageSrc}
+                    alt={imageAlt}
+                    width={800}
+                    height={1000}
+                    style={{
+                        boxShadow:
+                            "0  4px  8px  0 rgba(149,  123,  95,  0.2),  0  6px  20px  0 rgba(149,  123,  95,  0.19)",
+                    }}
+                />
             </Box>
-            <Image
-                src={imageSrc}
-                alt={imageAlt}
-                width={800}
-                height={1000}
-                style={{
-                    boxShadow:
-                        "0  4px  8px  0 rgba(149,  123,  95,  0.2),  0  6px  20px  0 rgba(149,  123,  95,  0.19)",
-                }}
-            />
-        </Box>
+            <Footer />
+        </>
     );
 };
 
