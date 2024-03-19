@@ -5,16 +5,14 @@ import {
     CV_IMAGE_DOWNLOAD_BUTTON_LABEL,
     CV_PDF_DOWNLOAD_BUTTON_LABEL,
 } from "../../../public/constants/text";
+import { CV_IMAGE_PATH, CV_PDF_PATH } from "../../../public/constants/paths";
 
 const DownloadButtons = () => {
-    const imageSrc = "/images/cv.png";
     const imageName = "cv.png";
-
-    const pdfSrc = "/cv/CV.pdf";
     const pdfName = "CV.pdf";
 
     const downloadImage = () => {
-        fetch(imageSrc)
+        fetch(CV_IMAGE_PATH)
             .then((response) => response.blob())
             .then((blob) => {
                 FileSaver.saveAs(blob, imageName);
@@ -23,7 +21,7 @@ const DownloadButtons = () => {
     };
 
     const downloadPdf = () => {
-        fetch(pdfSrc)
+        fetch(CV_PDF_PATH)
             .then((response) => response.blob())
             .then((blob) => {
                 FileSaver.saveAs(blob, pdfName);
