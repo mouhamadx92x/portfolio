@@ -1,5 +1,6 @@
 import { Box, Button } from "@mui/material";
 import FileSaver from "file-saver";
+import { downloadButtonsBoxStyles, downloadButtonsStyles } from "./styles";
 
 const DownloadButtons = () => {
     const imageSrc = "/images/cv.png";
@@ -27,24 +28,21 @@ const DownloadButtons = () => {
     };
 
     return (
-        <Box
-            sx={{
-                marginBottom: 2,
-                display: "flex",
-                alignContent: "space-between",
-                justifyContent: "space-between",
-                width: "500px",
-            }}
-        >
+        <Box sx={downloadButtonsBoxStyles}>
             <Button
                 variant="contained"
                 color="primary"
                 onClick={downloadImage}
-                sx={{ color: "#f2f2f2", backgroundColor: "#857b5f" }}
+                sx={downloadButtonsStyles}
             >
                 Download image
             </Button>
-            <Button variant="contained" color="primary" onClick={downloadPdf}>
+            <Button
+                variant="contained"
+                color="primary"
+                onClick={downloadPdf}
+                sx={downloadButtonsStyles}
+            >
                 Download pdf
             </Button>
         </Box>
