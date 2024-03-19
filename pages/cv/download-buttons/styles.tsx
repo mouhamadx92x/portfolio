@@ -1,3 +1,8 @@
+import {
+    BLEACHED_SILK_COLOR,
+    PALM_DESERT_COLOR,
+} from "../../../public/constants/colors";
+
 export const downloadButtonsBoxStyles = {
     marginBottom: 2,
     display: "flex",
@@ -7,6 +12,6 @@ export const downloadButtonsBoxStyles = {
 };
 
 export const downloadButtonsStyles = {
-    color: "#f2f2f2",
-    backgroundColor: "#857b5f",
+    color: BLEACHED_SILK_COLOR,
+    backgroundColor: PALM_DESERT_COLOR,
 };
