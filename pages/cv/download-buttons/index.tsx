@@ -1,6 +1,10 @@
 import { Box, Button } from "@mui/material";
 import FileSaver from "file-saver";
 import { downloadButtonsBoxStyles, downloadButtonsStyles } from "./styles";
+import {
+    CV_IMAGE_DOWNLOAD_BUTTON_LABEL,
+    CV_PDF_DOWNLOAD_BUTTON_LABEL,
+} from "../../../public/constants/text";
 
 const DownloadButtons = () => {
     const imageSrc = "/images/cv.png";
@@ -35,7 +39,7 @@ const DownloadButtons = () => {
                 onClick={downloadImage}
                 sx={downloadButtonsStyles}
             >
-                Download image
+                {CV_IMAGE_DOWNLOAD_BUTTON_LABEL}
             </Button>
             <Button
                 variant="contained"
@@ -43,7 +47,7 @@ const DownloadButtons = () => {
                 onClick={downloadPdf}
                 sx={downloadButtonsStyles}
             >
-                Download pdf
+                {CV_PDF_DOWNLOAD_BUTTON_LABEL}
             </Button>
         </Box>
     );
