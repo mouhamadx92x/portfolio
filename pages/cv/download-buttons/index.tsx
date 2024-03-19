@@ -4,29 +4,29 @@ import { downloadButtonsBoxStyles, downloadButtonsStyles } from "./styles";
 import {
     CV_IMAGE_DOWNLOAD_BUTTON_LABEL,
     CV_PDF_DOWNLOAD_BUTTON_LABEL,
+    CV_IMAGE_NAME,
+    CV_PDF_NAME,
+    CV_DOWNLOAD_ERROR_MESSAGE,
 } from "../../../public/constants/text";
 import { CV_IMAGE_PATH, CV_PDF_PATH } from "../../../public/constants/paths";
 
 const DownloadButtons = () => {
-    const imageName = "cv.png";
-    const pdfName = "CV.pdf";
-
     const downloadImage = () => {
         fetch(CV_IMAGE_PATH)
             .then((response) => response.blob())
             .then((blob) => {
-                FileSaver.saveAs(blob, imageName);
+                FileSaver.saveAs(blob, CV_IMAGE_NAME);
             })
-            .catch((error) => console.error("Error downloading image:", error));
+            .catch((error) => console.error(CV_DOWNLOAD_ERROR_MESSAGE, error));
     };
 
     const downloadPdf = () => {
         fetch(CV_PDF_PATH)
             .then((response) => response.blob())
             .then((blob) => {
-                FileSaver.saveAs(blob, pdfName);
+                FileSaver.saveAs(blob, CV_PDF_NAME);
             })
-            .catch((error) => console.error("Error downloading PDF:", error));
+            .catch((error) => console.error(CV_DOWNLOAD_ERROR_MESSAGE, error));
     };
 
     return (

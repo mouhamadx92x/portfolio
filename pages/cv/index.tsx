@@ -5,9 +5,9 @@ import Footer from "@/app/components/footer";
 import DownloadButtons from "./download-buttons";
 import { cvImageStyles, cvImageBoxStyles } from "./styles";
 import { CV_IMAGE_PATH } from "../../public/constants/paths";
+import { CV_IMAGE_ALT } from "../../public/constants/text";
 
 const CVImage = () => {
-    const imageAlt = "cv image";
     return (
         <>
             <Header />
@@ -16,7 +16,7 @@ const CVImage = () => {
                 <Box
                     component="img"
                     src={CV_IMAGE_PATH}
-                    alt={imageAlt}
+                    alt={CV_IMAGE_ALT}
                     width={800}
                     height={1000}
                     sx={cvImageStyles}
