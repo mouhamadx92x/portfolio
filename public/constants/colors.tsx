@@ -15,3 +15,5 @@ export const GREY_SHINGLE_COLOR = "#949494";
 export const BLEACHED_SILK_COLOR = "#f2f2f2";
 
 export const PALM_DESERT_COLOR = "#f2f2f2";
+
+export const WINDSWEPT_LEAVES_COLOR = "#b8926d";

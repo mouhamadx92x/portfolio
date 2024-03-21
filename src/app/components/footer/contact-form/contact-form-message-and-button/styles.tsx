@@ -1,6 +1,7 @@
 import {
     PELICAN_TAN_COLOR,
     SHOE_WAX_COLOR,
+    WINDSWEPT_LEAVES_COLOR,
 } from "../../../../../../public/constants/colors";
 
 export const footerContactUsFormMessageAndButtonBoxStyles = {
@@ -22,6 +23,6 @@ export const footerContactUsFormButtonStyles = {
     color: SHOE_WAX_COLOR,
     alignSelf: "flex-end",
     "&:hover": {
-        backgroundColor: PELICAN_TAN_COLOR,
+        backgroundColor: WINDSWEPT_LEAVES_COLOR,
     },
 };

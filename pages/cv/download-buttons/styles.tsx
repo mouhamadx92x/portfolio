@@ -1,6 +1,7 @@
 import {
-    BLEACHED_SILK_COLOR,
-    PALM_DESERT_COLOR,
+    PELICAN_TAN_COLOR,
+    SHOE_WAX_COLOR,
+    WINDSWEPT_LEAVES_COLOR,
 } from "../../../public/constants/colors";
 
 export const downloadButtonsBoxStyles = {
@@ -12,6 +13,9 @@ export const downloadButtonsBoxStyles = {
 };
 
 export const downloadButtonsStyles = {
-    color: BLEACHED_SILK_COLOR,
-    backgroundColor: PALM_DESERT_COLOR,
+    backgroundColor: PELICAN_TAN_COLOR,
+    color: SHOE_WAX_COLOR,
+    "&:hover": {
+        backgroundColor: WINDSWEPT_LEAVES_COLOR,
+    },
 };
