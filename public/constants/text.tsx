@@ -59,3 +59,15 @@ export const PROJECT_DETAILS_NAVBAR_LABEL_BACK = "Back";
 export const PROJECT_DETAILS_NAVBAR_LABEL_GITHUB = "Github";
 
 export const PROJECT_DETAILS_NAVBAR_LABEL_LIVE_PROJECT = "Live project";
+
+export const CV_IMAGE_DOWNLOAD_BUTTON_LABEL = "Download image";
+
+export const CV_PDF_DOWNLOAD_BUTTON_LABEL = "Download pdf";
+
+export const CV_IMAGE_ALT = "cv image";
+
+export const CV_IMAGE_NAME = "cv image";
+
+export const CV_PDF_NAME = "cv image";
+
+export const CV_DOWNLOAD_ERROR_MESSAGE = "Error downloading cv";

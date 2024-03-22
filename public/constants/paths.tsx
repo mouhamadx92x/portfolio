@@ -44,3 +44,7 @@ export const JS_ICON_PATH = "/icons/js.png";
 export const TS_ICON_PATH = "/icons/ts.png";
 
 export const CSS_ICON_PATH = "/icons/css.jpeg";
+
+export const CV_IMAGE_PATH = "/images/cv.png";
+
+export const CV_PDF_PATH = "/cv/CV.pdf";
