@@ -16,7 +16,7 @@ const HomePage = () => {
     return (
         <>
             <Box sx={{ ...homePageMainBoxStyles, height: boxHeight }}>
-                <Header />
+                {/* <Header /> */}
             </Box>
             <Box sx={homePageProjectsCardBoxStyles}>
                 {projectsData.map(
@@ -39,7 +39,7 @@ const HomePage = () => {
                     )
                 )}
             </Box>
-            <Footer />
+            {/* <Footer /> */}
             <ToastContainer position="bottom-center" limit={1} />
         </>
     );
