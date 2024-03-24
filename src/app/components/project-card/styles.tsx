@@ -13,4 +13,5 @@ export const projectsCardTypographyBoxStyles = {
     paddingLeft: { xs: "0", md: "75px" },
     width: { xs: "300px", md: "500px" },
     marginTop: { xs: "20px", md: "0px" },
+    height: "300px",
 };
