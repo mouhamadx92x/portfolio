@@ -2,7 +2,7 @@ export const footerContactUsFromMainBoxStyles = {
     display: "flex",
     flexDirection: "column",
     alignItems: "flex-start",
-    width: "430px",
+    width: { xs: "350px", md: "400px" },
     marginTop: "15px",
 };
 
