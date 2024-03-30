@@ -1,43 +1,32 @@
 import { BLEACHED_SILK_COLOR } from "../../../../../public/constants/colors";
 
 export const footerContactInfoBoxStyles = {
+    width: { xs: "350px", sm: "250px", md: "450px" },
+    height: "300px",
+    color: BLEACHED_SILK_COLOR,
     display: "flex",
     flexDirection: "column",
-    alignItems: "flex-start",
     justifyContent: "space-between",
-    width: { xs: "350px", md: "450px" },
-    height: "330px",
-    color: BLEACHED_SILK_COLOR,
-    marginBottom: { xs: "10px" },
-    marginTop: { xs: "10px" },
 };
 
 export const footerContactDetailsBoxStyles = {
     display: "flex",
-    flexDirection: { xs: "column", md: "row" },
-    justifyContent: "space-between",
-    width: { xs: "350px", md: "450px" },
-    marginBottom: { xs: "10px" },
-    marginTop: { xs: "10px" },
-};
-
-export const footerAddressDetailsBoxStyle = {
-    display: "flex",
-    flexDirection: "column",
-    marginBottom: { xs: "10px" },
-};
-
-export const footerPersonalContactDetailsBoxStyle = {
-    marginBottom: { xs: "10px" },
+    height: { xs: "125px", sm: "150px", md: "75px" },
+    flexDirection: { xs: "column", sm: "column", md: "row" },
+    justifyContent: {
+        xs: "space-around",
+        sm: "space-around",
+        md: "space-around",
+    },
 };
 
 export const footerSocialMediaBoxStyle = {
+    alignSelf: "center",
     display: "flex",
-    justifyContent: "start",
+    justifyContent: "space-around",
     width: "150px",
-    marginBottom: { xs: "10px" },
 };
 export const footerSocialMediaStyle = {
     color: BLEACHED_SILK_COLOR,
-    marginRight: "30px",
+    alignSelf: "center",
 };

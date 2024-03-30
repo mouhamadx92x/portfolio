@@ -14,7 +14,7 @@ const Footer = () => {
         >
             <Box sx={footerMainBoxStyles}>
                 <FooterContactDetails />
-                <ContactForm />
+                {/* <ContactForm /> */}
             </Box>
         </Box>
     );

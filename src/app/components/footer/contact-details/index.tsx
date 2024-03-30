@@ -4,8 +4,6 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import {
     footerContactInfoBoxStyles,
     footerContactDetailsBoxStyles,
-    footerAddressDetailsBoxStyle,
-    footerPersonalContactDetailsBoxStyle,
     footerSocialMediaBoxStyle,
     footerSocialMediaStyle,
 } from "./styles";
@@ -23,11 +21,11 @@ const FooterContactDetails = () => {
         <Box sx={footerContactInfoBoxStyles}>
             <Typography>{FOOTER_CONTACT_ADDRESS_SECTION_LABEL}</Typography>
             <Box sx={footerContactDetailsBoxStyles}>
-                <Box sx={footerPersonalContactDetailsBoxStyle}>
+                <Box>
                     <Typography>{FOOTER_CONTACT_MOBIL_NUMBER}</Typography>
                     <Typography>{FOOTER_CONTACT_EMAIL}</Typography>
                 </Box>
-                <Box sx={footerAddressDetailsBoxStyle}>
+                <Box>
                     <Typography>{FOOTER_CONTACT_ADDRESS_STREET}</Typography>
                     <Typography>{FOOTER_CONTACT_ADDRESS_POST_CODE}</Typography>
                 </Box>
