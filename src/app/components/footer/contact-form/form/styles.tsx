@@ -1,6 +1,7 @@
 export const footerContactUsFromStyles = {
     display: "flex",
-    width: { xs: "350px", md: "450px" },
-    marginTop: "20px",
-    height: "330px",
+    justifyContent: "space-between",
+    flexDirection: { xs: "row", sm: "column", md: "row" },
+    width: { xs: "350px", sm: "250px", md: "450px" },
+    height: { xs: "200px", sm: "270px", md: "200px" },
 };

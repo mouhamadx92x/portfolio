@@ -1,9 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import StyledTextField from "../styled-text-field";
-import {
-    footerContactUsFormLabelStyles,
-    footerContactUsFormNameAndEmailBoxStyles,
-} from "./styles";
+import { footerContactUsFormNameAndEmailBoxStyles } from "./styles";
 import {
     FOOTER_CONTACT_FORM_TEXT_FIELD_NAME_LABEL,
     FOOTER_CONTACT_FORM_TEXT_FIELD_EMAIL_LABEL,
@@ -12,12 +9,10 @@ import {
 const ContactFormNameAndEmail = () => {
     return (
         <Box sx={footerContactUsFormNameAndEmailBoxStyles}>
-            <Typography sx={footerContactUsFormLabelStyles}>
-                {FOOTER_CONTACT_FORM_TEXT_FIELD_NAME_LABEL}
-            </Typography>
+            <Typography>{FOOTER_CONTACT_FORM_TEXT_FIELD_NAME_LABEL}</Typography>
 
             <StyledTextField id="senderName" name="senderName" required />
-            <Typography sx={footerContactUsFormLabelStyles}>
+            <Typography>
                 {FOOTER_CONTACT_FORM_TEXT_FIELD_EMAIL_LABEL}
             </Typography>
             <StyledTextField

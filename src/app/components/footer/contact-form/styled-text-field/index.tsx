@@ -16,6 +16,7 @@ const StyledTextField = styled(TextField)(() => ({
     },
     "& .MuiOutlinedInput-input": {
         color: "#949494",
+        height: "13px",
     },
 }));
 

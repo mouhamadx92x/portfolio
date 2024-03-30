@@ -6,7 +6,7 @@ export const footerMainBoxStyles = {
 };
 
 export const footerBoxStyles = {
-    height: { xs: "580px", sm: "330px", md: "285px" },
+    height: { xs: "500px", sm: "330px", md: "285px" },
     backgroundColor: "transparent",
     display: "flex",
     flexDirection: { xs: "column", sm: "row" },
@@ -14,6 +14,6 @@ export const footerBoxStyles = {
     alignItems: { xs: "center", md: "center" },
     paddingTop: { xs: "5px", sm: "5px", md: "15px" },
     paddingBottom: { xs: "5px", sm: "5px", md: "15px" },
-    width: { xs: "375px", sm: "500px", md: "900px" },
+    width: { xs: "375px", sm: "500px", md: "950px" },
     color: BLEACHED_SILK_COLOR,
 };

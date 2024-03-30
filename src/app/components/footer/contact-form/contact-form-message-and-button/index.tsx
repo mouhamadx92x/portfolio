@@ -2,9 +2,7 @@ import { Box, Button, Typography } from "@mui/material";
 import StyledTextField from "../styled-text-field/index";
 import {
     footerContactUsFormButtonStyles,
-    footerContactUsFormLabelStyles,
     footerContactUsFormMessageAndButtonBoxStyles,
-    footerContactUsFormMessageTextFieldStyles,
 } from "./styles";
 import {
     FOOTER_CONTACT_FORM_TEXT_FIELD_MESSAGE_LABEL,
@@ -14,7 +12,7 @@ import {
 const ContactFormMessageAndButton = () => {
     return (
         <Box sx={footerContactUsFormMessageAndButtonBoxStyles}>
-            <Typography sx={footerContactUsFormLabelStyles}>
+            <Typography>
                 {FOOTER_CONTACT_FORM_TEXT_FIELD_MESSAGE_LABEL}
             </Typography>
 
@@ -22,9 +20,7 @@ const ContactFormMessageAndButton = () => {
                 id="messageContent"
                 name="messageContent"
                 multiline
-                rows={5}
                 required
-                sx={footerContactUsFormMessageTextFieldStyles}
             />
 
             <Button
