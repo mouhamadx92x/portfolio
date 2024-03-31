@@ -8,8 +8,7 @@ export const footerContactUsFormMessageAndButtonBoxStyles = {
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",
-    height: { xs: "200px", sm: "130px", md: "200px" },
-    width: { xs: "165px", sm: "250px", md: "200px" },
+    height: "130px",
 };
 
 export const footerContactUsFormButtonStyles = {
