@@ -6,7 +6,7 @@ export const footerMainBoxStyles = {
 };
 
 export const footerBoxStyles = {
-    height: { xs: "630px", sm: "330px", md: "330px" },
+    height: { xs: "600px", sm: "330px", md: "330px" },
     backgroundColor: "transparent",
     display: "flex",
     flexDirection: { xs: "column", sm: "row" },
