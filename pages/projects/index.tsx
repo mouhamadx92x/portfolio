@@ -14,7 +14,7 @@ import { projectsData } from "../../public/assets/assets";
 const ProjectList = () => {
     return (
         <>
-            <Header />
+            {/* <Header /> */}
             <Box sx={projectListMainBoxStyles}>
                 <Typography variant="h4" sx={projectListTypographyLabelStyles}>
                     {PROJECT_LIST_LABEL}
