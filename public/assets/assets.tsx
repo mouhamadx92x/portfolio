@@ -86,6 +86,6 @@ export const projectsData = [
         webSiteLink: VIDEOS_STUDIO_PROJECT_LIVE_LINK,
         githubLink: VIDEOS_STUDIO_PROJECT_GITHUB_LINK,
         creationDate: "1/24",
-        stack: [REACT_ICON_PATH, TS_ICON_PATH, MUI_ICON_PATH],
+        stackIconsPaths: [REACT_ICON_PATH, TS_ICON_PATH, MUI_ICON_PATH],
     },
 ];
