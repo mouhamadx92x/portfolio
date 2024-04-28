@@ -26,7 +26,7 @@ const ProjectDetails = () => {
 
     return (
         <>
-            <Header />
+            {/* <Header /> */}
             <Box sx={projectDetailsMainBoxStyles}>
                 <CarouselWithStepper imagesPath={imagesPath} />
 

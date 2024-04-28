@@ -10,14 +10,15 @@ export const projectDetailsMainBoxStyles = {
 };
 
 export const projectDetailsNameAndDescriptionBoxStyles = {
-    width: "900px",
+    width: { xs: "350px", sm: "450px", md: "850px", lg: "1150px" },
     display: "flex",
+    flexDirection: { xs: "column", sm: "column", md: "row" },
     justifyContent: "space-between",
     alignItems: "center",
 };
 
 export const projectDetailsNameLabelStyles = {
-    margin: "20px",
+    marginBottom: "20px",
     color: "#857b5f",
 };
 
