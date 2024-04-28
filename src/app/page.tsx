@@ -30,7 +30,7 @@ const HomePage = () => {
         <>
             <ThemeProvider theme={theme}>
                 <Box sx={{ ...homePageMainBoxStyles, height: boxHeight }}>
-                    {/* <Header /> */}
+                    <Header />
                 </Box>
                 <Box sx={homePageProjectsCardBoxStyles}>
                     {projectsData.map(
