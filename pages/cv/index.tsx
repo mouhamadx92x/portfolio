@@ -10,15 +10,13 @@ import { CV_IMAGE_ALT } from "../../public/constants/text";
 const CVImage = () => {
     return (
         <>
-            <Header />
+            {/* <Header /> */}
             <Box sx={cvImageBoxStyles}>
                 <DownloadButtons />
                 <Box
                     component="img"
                     src={CV_IMAGE_PATH}
                     alt={CV_IMAGE_ALT}
-                    width={800}
-                    height={1000}
                     sx={cvImageStyles}
                 />
             </Box>

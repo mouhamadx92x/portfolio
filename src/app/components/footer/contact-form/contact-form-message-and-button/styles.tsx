@@ -7,15 +7,8 @@ import {
 export const footerContactUsFormMessageAndButtonBoxStyles = {
     display: "flex",
     flexDirection: "column",
-    height: "300px",
-};
-
-export const footerContactUsFormLabelStyles = {
-    marginBottom: "6px",
-};
-
-export const footerContactUsFormMessageTextFieldStyles = {
-    marginBottom: "20px",
+    justifyContent: "space-between",
+    height: "130px",
 };
 
 export const footerContactUsFormButtonStyles = {

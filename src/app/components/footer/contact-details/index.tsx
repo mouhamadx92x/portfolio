@@ -4,10 +4,9 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import {
     footerContactInfoBoxStyles,
     footerContactDetailsBoxStyles,
-    footerAddressDetailsBoxStyle,
-    footerPersonalContactDetailsBoxStyle,
-    footerSocialMediaBoxStyle,
-    footerSocialMediaStyle,
+    footerSocialMediaBoxStyles,
+    footerSocialMediaStyles,
+    FooterContactInfoTextStyles,
 } from "./styles";
 import {
     FOOTER_CONTACT_ADDRESS_SECTION_LABEL,
@@ -21,29 +20,44 @@ import {
 const FooterContactDetails = () => {
     return (
         <Box sx={footerContactInfoBoxStyles}>
-            <Typography>{FOOTER_CONTACT_ADDRESS_SECTION_LABEL}</Typography>
+            <Typography sx={FooterContactInfoTextStyles}>
+                {FOOTER_CONTACT_ADDRESS_SECTION_LABEL}
+            </Typography>
             <Box sx={footerContactDetailsBoxStyles}>
-                <Box sx={footerPersonalContactDetailsBoxStyle}>
-                    <Typography>{FOOTER_CONTACT_MOBIL_NUMBER}</Typography>
-                    <Typography>{FOOTER_CONTACT_EMAIL}</Typography>
+                <Box>
+                    <Typography sx={FooterContactInfoTextStyles}>
+                        {FOOTER_CONTACT_MOBIL_NUMBER}
+                    </Typography>
+                    <Typography sx={FooterContactInfoTextStyles}>
+                        {FOOTER_CONTACT_EMAIL}
+                    </Typography>
                 </Box>
-                <Box sx={footerAddressDetailsBoxStyle}>
-                    <Typography>{FOOTER_CONTACT_ADDRESS_STREET}</Typography>
-                    <Typography>{FOOTER_CONTACT_ADDRESS_POST_CODE}</Typography>
+                <Box>
+                    <Typography sx={FooterContactInfoTextStyles}>
+                        {FOOTER_CONTACT_ADDRESS_STREET}
+                    </Typography>
+                    <Typography sx={FooterContactInfoTextStyles}>
+                        {FOOTER_CONTACT_ADDRESS_POST_CODE}
+                    </Typography>
                 </Box>
             </Box>
-            <Box sx={footerSocialMediaBoxStyle}>
+            <Box sx={footerSocialMediaBoxStyles}>
                 <Link href="https://www.linkedin.com/in/your-profile">
                     <LinkedInIcon
                         fontSize="medium"
-                        sx={footerSocialMediaStyle}
+                        sx={footerSocialMediaStyles}
                     />
                 </Link>
                 <Link href="https://github.com/your-username">
-                    <GitHubIcon fontSize="medium" sx={footerSocialMediaStyle} />
+                    <GitHubIcon
+                        fontSize="medium"
+                        sx={footerSocialMediaStyles}
+                    />
                 </Link>
             </Box>
-            <Typography>{FOOTER_CONTACT_COPY_RIGHT}</Typography>
+            <Typography sx={FooterContactInfoTextStyles}>
+                {FOOTER_CONTACT_COPY_RIGHT}
+            </Typography>
         </Box>
     );
 };
