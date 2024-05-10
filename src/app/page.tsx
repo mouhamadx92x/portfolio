@@ -18,10 +18,10 @@ const HomePage = () => {
         breakpoints: {
             values: {
                 xs: 0,
-                sm: 510,
-                md: 1000,
-                lg: 1200,
-                xl: 1536,
+                sm: 600,
+                md: 960,
+                lg: 1280,
+                xl: 1920,
             },
         },
     });
