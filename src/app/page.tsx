@@ -10,6 +10,7 @@ import { projectsData } from "../../public/assets/assets";
 import "../styles/global.css";
 import useScrollHeight from "@/hooks/useScrollHeight";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
+import NewHeader from "./components/header-new";
 
 const HomePage = () => {
     const boxHeight = useScrollHeight({ initialValue: 500 });
@@ -30,7 +31,7 @@ const HomePage = () => {
         <>
             <ThemeProvider theme={theme}>
                 <Box sx={{ ...homePageMainBoxStyles, height: boxHeight }}>
-                    <Header />
+                    <NewHeader />
                 </Box>
                 <Box sx={homePageProjectsCardBoxStyles}>
                     {projectsData.map(
