@@ -10,6 +10,20 @@ const NewHeader = () => {
                     <DeveloperModeIcon fontSize="large" />
                     <Typography variant="h4">Mohammad</Typography>
                 </Box>
+                <Box>
+                    <Link href="" passHref>
+                        <Typography variant="h4">mo</Typography>
+                    </Link>
+                    <Link href="" passHref>
+                        <Typography variant="h4">mo</Typography>
+                    </Link>
+                    <Link href="" passHref>
+                        <Typography variant="h4">mo</Typography>
+                    </Link>
+                    <Link href="" passHref>
+                        <Typography variant="h4">mo</Typography>
+                    </Link>
+                </Box>
             </Toolbar>
         </AppBar>
     );
