@@ -9,7 +9,7 @@ const useScrollHeight = ({ initialValue = 300 }: ScrollHeightProps = {}) => {
 
     useEffect(() => {
         const handleScroll = () => {
-            const newHeight = Math.max(300, 500 - window.scrollY / 2);
+            const newHeight = Math.max(50, 125 - window.scrollY / 2);
             setBoxHeight(newHeight);
         };
 

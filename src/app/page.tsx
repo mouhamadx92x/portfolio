@@ -13,7 +13,7 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import NewHeader from "./components/header-new";
 
 const HomePage = () => {
-    const boxHeight = useScrollHeight({ initialValue: 500 });
+    const boxHeight = useScrollHeight({ initialValue: 125 });
 
     const theme = createTheme({
         breakpoints: {
