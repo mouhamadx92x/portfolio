@@ -5,7 +5,18 @@ import { PELICAN_TAN_COLOR } from "../../../../public/constants/colors";
 
 const NewHeader = () => {
     return (
-        <AppBar position="fixed">
+        <AppBar
+            position="fixed"
+            sx={{
+                width: "60vw",
+                margin: "0 auto",
+                backgroundColor: "transparent",
+                border: "0",
+                boxShadow: "none",
+                top: "3%",
+                right: "15%",
+            }}
+        >
             <Toolbar>
                 <Box
                     sx={{
