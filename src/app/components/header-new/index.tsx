@@ -20,7 +20,13 @@ const NewHeader = () => {
                     <DeveloperModeIcon sx={{ fontSize: "70px" }} />
                     <Typography variant="h4">Mohammad</Typography>
                 </Box>
-                <Box>
+                <Box
+                    sx={{
+                        width: "600px",
+                        display: "flex",
+                        justifyContent: "space-around",
+                    }}
+                >
                     <Link href="" passHref>
                         <Typography variant="h4">mo</Typography>
                     </Link>
